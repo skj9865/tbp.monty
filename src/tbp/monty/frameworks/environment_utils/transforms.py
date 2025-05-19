@@ -381,7 +381,8 @@ class DepthTo3DLocations:
                     sensor. Has the same structure as "semantic_3d". Included only
                     when `self.get_all_points` is `True`.
         """
-        for i, sensor_id in enumerate(self.sensor_ids):
+        
+        for i, sensor_id in enumerate(self.sensor_ids):            
             agent_obs = observations[self.agent_id][sensor_id]
             depth_patch = agent_obs["depth"]
 
@@ -477,7 +478,8 @@ class DepthTo3DLocations:
                 semantic_3d = xyz.transpose(1, 0)
                 semantic_3d[:, 3] = semantic[0]
                 sensor_frame_data[:, 3] = semantic[0]
-
+               
+                
                 # Add point-cloud data expressed in sensor coordinate frame. Used for
                 # point-normal extraction
                 observations[self.agent_id][sensor_id]["sensor_frame_data"] = (
@@ -491,7 +493,11 @@ class DepthTo3DLocations:
 
             # Add transformed observation to existing dict. We don't need to create
             # a deepcopy because we are appending a new observation
-            observations[self.agent_id][sensor_id]["semantic_3d"] = semantic_3d
+            #print(observations[self.agent_id][sensor_id]["semantic_3d"])
+            #print(semantic_3d)
+            
+            observations[self.agent_id][sensor_id]["semantic_3d"] = semantic_3d          
+            
 
         return observations
 

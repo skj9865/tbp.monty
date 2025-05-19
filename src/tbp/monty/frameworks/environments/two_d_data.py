@@ -906,17 +906,11 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
 
         Returns:
             observation (dict).
-        """        
-        if action.name in self._valid_actions:
-            amount = action.rotation_degrees
-        else:
-            amount = 0
-        
-        if np.abs(amount) < 1:
-            amount = 1
-        # Make sure amount is int since we are moving using pixel indices
-        amount = int(amount)        
-        amount = 1
+        """     
+        #print(self.step_num)   
+    
+        amount = 1        
+        self.step_num += amount
         
         query_loc = self.get_next_loc(action.name, amount)        
         self.current_loc = query_loc  
@@ -927,21 +921,20 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         #print(action.name)
 
         # patch : (H, W) uint8, 0=배경·>0=글자        
-        h, w = patch.shape
+        h, w = patch.shape        
         yy, xx = np.mgrid[0:h, 0:w]
         zz = np.zeros_like(xx, dtype=np.float32)
-
+        #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
-        sem_id = (patch > 0).astype(np.float32)
+        sem_id = (patch > 20).astype(np.float32)
         semantic_3d = np.stack([xx, yy, zz, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
+        
         #print(semantic_3d)
         #depth = 1.2 - gaussian_filter(np.array(~patch, dtype=float), sigma=0.5)
         #depth = np.ones((patch.shape[0],patch.shape[1]))
 
-        # ▶ Downstream(DepthTo3DLocations) 를 쓰지 않으므로,
-        #   sensor_frame_data 는 semantic_3d 복사본으로 충분합니다.
         sensor_frame_data = semantic_3d.copy()
 
         # ── 4) 깊이 맵 : 0.5(전경) / 1.0(배경) ───────────────────────
@@ -960,7 +953,7 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
                     "pixel_loc": self.current_loc,
                 },
                 "view_finder": {
-                    "depth": self.current_image,
+                    "rgba": self.current_image,
                     "semantic": np.array(patch, dtype=int),
                 },
             }
@@ -1015,20 +1008,33 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         self.step_num = 0
         patch = self.get_image_patch(
             self.current_image, self.current_loc, self.patch_size
-        )
-        
-                
+        )              
+        depth = np.where(patch > 0, 0.5, 1.0).astype(np.float32)  
+                # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
+        h, w = patch.shape
+        yy, xx = np.mgrid[0:h, 0:w]
+        zz = np.zeros_like(xx, dtype=np.float32)
+        sem_id = (patch > 200).astype(np.float32)
+        semantic_3d = np.stack([xx, yy, zz, sem_id], axis=-1) \
+                .astype(np.float32) \
+                .reshape(-1, 4)   
+        #print(semantic_3d)
         #depth = 1.2 - gaussian_filter(np.array(~patch, dtype=float), sigma=0.5)
-        depth = np.ones((patch.shape[0],patch.shape[1]))
+        #depth = np.ones((patch.shape[0],patch.shape[1]))
+
+        # ▶ Downstream(DepthTo3DLocations) 를 쓰지 않으므로,
+        #   sensor_frame_data 는 semantic_3d 복사본으로 충분합니다.
+        sensor_frame_data = semantic_3d.copy()
+
+        world_camera = np.eye(4, dtype=np.float32)
         obs = {
             "agent_id_0": {
                 "patch": {
                     "depth": depth,
-                    "semantic": np.array(patch, dtype=int),
-                    #"rgba" : patch,
-                    "rgba": np.stack(
-                        [patch, patch, patch], axis=2
-                    ),  # TODO: placeholder
+                    "semantic_3d": semantic_3d,
+                    "sensor_frame_data": sensor_frame_data,
+                    "world_camera": world_camera,
+                    "rgba": np.stack([patch, patch, patch], axis=2),
                     "pixel_loc": self.current_loc,
                 },
                 "view_finder": {
@@ -1036,7 +1042,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
                     "semantic": np.array(patch, dtype=int),
                 },
             }
-        }        
+        }   
+             
         return obs
 
     def load_new_number_data(self):
@@ -1156,9 +1163,12 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         y_start = loc[1] - self.patch_size // 2
         y_stop = loc[1] + self.patch_size // 2
         patch = img[x_start:x_stop, y_start:y_stop]
+        #print(x_start,x_stop,y_start,y_stop)
+        #print(patch)
         return patch
 
     def close(self):
         self._current_state = None
+
 
 

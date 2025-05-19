@@ -349,8 +349,7 @@ class DetailedLoggingSM(SensorModuleBase):
 
 
     def observations_to_comunication_protocol(self, data, on_object_only=True):        
-        patch_dict = data #by skj
-
+        patch_dict = data #by skj        
         # 1) 회색 패치 (H,W) ─ 그래디언트‧헤시안 계산용
         gray_patch = patch_dict["rgba"][:, :, 0].astype(np.float32) # by skj
         
@@ -404,6 +403,8 @@ class DetailedLoggingSM(SensorModuleBase):
         #print(semantic_id)
         # on_object 플래그
         morph_feats["on_object"] = float(semantic_id > 0)
+        
+        #print(x,y,z)
 
         observed_state = State(
             location=np.array([x, y, z]),           # ★ self.current_loc 대신

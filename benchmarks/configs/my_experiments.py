@@ -236,7 +236,7 @@ mnist_inference = dict(
     monty_config=PatchAndViewMontyConfig(
         monty_class=MontyForEvidenceGraphMatching,
         learning_module_configs=dict(
-            learning_module_0=dict(
+            learning_module_0=dict( 
                 learning_module_class=EvidenceGraphLM,
                 learning_module_args=dict(
                     # xyz values are in larger range so need to increase mmd

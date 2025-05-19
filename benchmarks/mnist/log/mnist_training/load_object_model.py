@@ -117,10 +117,10 @@ def load_object_model(
         (1354, 4)
     """
     if checkpoint is None:
-        model_path = "pretrained/model.pt"
+        model_path = f"pretrained/{model_name}"
     else:
         model_path = (
-            f"pretrained/checkpoints/{checkpoint}/model.pt"
+            f"pretrained/checkpoints/{checkpoint}/{model_name}"
         )
     data = torch.load(model_path)
     data = data["lm_dict"][lm_id]["graph_memory"][object_name]["patch"]

@@ -7,7 +7,7 @@ from load_object_model import load_object_model   # 함수가 있는 모듈
 DMC_PRETRAIN_DIR = Path("")   # 필요하면 환경 변수 대신 직접 지정
 model = load_object_model(
     model_name="model.pt",   # 서브폴더 이름 = 실험명
-    object_name="4_1",         # 그래프에 저장된 key (예: "digit_6")
+    object_name="1_5",         # 그래프에 저장된 key (예: "digit_6")
     features=("rgba",),            # 색상까지 함께 읽기
     checkpoint=None,               # 마지막 model.pt
     lm_id=0,

@@ -422,7 +422,7 @@ class MnistDatasetArgs: # by skj
                 get_all_points=True,
                 use_semantic_sensor=False,
                 depth_clip_sensors=(0,),
-                clip_value=1.1,
+                clip_value=1.1,                
             ),
         ]
 
@@ -433,7 +433,7 @@ class MnistDataloaderArgs: # by skj
     #characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3,1,2,3,1,2,3,4,5,6,1,2,3])
     #versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1,2,2,2,2,2,2,3,3,3,3,3,3,5,5,5,5,5,5])
     
-    numbers: List = field(default_factory=lambda: [1])
+    numbers: List = field(default_factory=lambda: [5])
     versions: List = field(default_factory=lambda: [0])
     
     #alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
