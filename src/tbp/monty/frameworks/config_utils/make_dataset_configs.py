@@ -24,6 +24,7 @@ from tbp.monty.frameworks.environments.two_d_data import (
     OmniglotEnvironment,
     SaccadeOnImageEnvironment,
     SaccadeOnImageFromStreamEnvironment,
+    TwoDimensionSaccadeOnImageEnvironment,
 )
 from tbp.monty.frameworks.environments.ycb import SHUFFLED_YCB_OBJECTS
 from tbp.monty.frameworks.utils.transform_utils import scipy_to_numpy_quat
@@ -318,19 +319,9 @@ class EnvironmentDataLoaderPerObjectTrainArgs(EnvironmentDataloaderPerObjectArgs
 
 
 @dataclass
-class InformedEnvironmentDataLoaderTrainArgs(EnvironmentDataLoaderPerObjectTrainArgs):
-    use_get_good_view_positioning_procedure: bool = False
-
-
-@dataclass
 class EnvironmentDataLoaderPerObjectEvalArgs(EnvironmentDataloaderPerObjectArgs):
     object_names: List = field(default_factory=lambda: DefaultTrainObjectList().objects)
     object_init_sampler: Callable = field(default_factory=DefaultObjectInitializer)
-
-
-@dataclass
-class InformedEnvironmentDataLoaderEvalArgs(EnvironmentDataLoaderPerObjectEvalArgs):
-    use_get_good_view_positioning_procedure: bool = False
 
 
 @dataclass
@@ -359,13 +350,6 @@ class EnvironmentDataloaderMultiObjectArgs:
     object_init_sampler: Callable
 
 
-@dataclass
-class InformedEnvironmentDataloaderMultiObjectArgs(
-    EnvironmentDataloaderMultiObjectArgs
-):
-    use_get_good_view_positioning_procedure: bool = False
-
-
 def get_object_names_by_idx(
     start, stop, list_of_indices=None, object_list=SHUFFLED_YCB_OBJECTS
 ):
@@ -391,6 +375,160 @@ class OmniglotDataloaderArgs:
     alphabets: List = field(default_factory=lambda: [0, 0, 0, 1, 1, 1])
     characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3])
     versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1])
+
+@dataclass
+class OmniglotTrainDataloaderArgs:
+    """Set basic debug args to load 3 characters of 2 alphabets in 1 version."""
+
+    alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+                                                     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 
+                                                     2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    characters: List = field(default_factory=lambda: [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14, 15, 15, 16, 16, 17, 17, 18, 18, 19, 19, 20, 20, 
+                                                      21, 21, 22, 22, 23, 23, 24, 24, 25, 25, 26, 26, 27, 27, 28, 28, 29, 29, 30, 30, 31, 31, 32, 32, 33, 33, 34, 34, 35, 35, 36, 36, 37, 37, 38, 38, 
+                                                      39, 39, 40, 40, 41, 41, 42, 42, 43, 43, 44, 44, 45, 45, 46, 46, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 
+                                                      14, 14, 15, 15, 16, 16, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 13, 13, 14, 14])
+    versions: List = field(default_factory=lambda: [1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 
+                                                    1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 
+                                                    1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 
+                                                    1, 2])
+ 
+@dataclass
+class OmniglotEvalDataloaderArgs:
+    """Set basic debug args to load 3 characters of 2 alphabets in 1 version."""
+
+    alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                     1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                     2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    characters: List = field(default_factory=lambda: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17,18,19, 20, 21, 22, 23, 24, 25,26,27, 28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,
+                                                      1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+                                                      1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+    versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+
+
+@dataclass
+class MnistDatasetArgs: # by skj
+    env_init_func: Callable = field(default=TwoDimensionSaccadeOnImageEnvironment)
+    env_init_args: Dict = field(default_factory=lambda: dict())
+    transform: Union[Callable, list, None] = None
+
+    def __post_init__(self):
+        self.transform = [
+            DepthTo3DLocations(
+                agent_id="agent_id_0",
+                sensor_ids=["patch"],
+                resolutions=np.array([[10, 10]]),
+                world_coord=True,
+                zooms=1,
+                get_all_points=True,
+                use_semantic_sensor=False,
+                depth_clip_sensors=(0,),
+                clip_value=1.1,
+            ),
+        ]
+
+@dataclass
+class MnistDataloaderArgs: # by skj
+
+    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 1, 1, 1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1])
+    #characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3,1,2,3,1,2,3,4,5,6,1,2,3])
+    #versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1,2,2,2,2,2,2,3,3,3,3,3,3,5,5,5,5,5,5])
+    
+    numbers: List = field(default_factory=lambda: [1])
+    versions: List = field(default_factory=lambda: [0])
+    
+    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    #                                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    #                                                 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    #characters: List = field(default_factory=lambda: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17,18,19, 20, 21, 22, 23, 24, 25,26,27, 28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,
+    #                                                  1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+    #                                                  1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+    #versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+
+@dataclass
+class MnistEvalDataloaderArgs: # by skj
+    """Set basic debug args to load 3 characters of 2 alphabets in 1 version."""
+
+    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 1, 1, 1,0,0,0,1,1,1,0,0,0,1,1,1,0,0,0,1,1,1])
+    #characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3,1,2,3,1,2,3,4,5,6,1,2,3])
+    #versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1,2,2,2,2,2,2,3,3,3,3,3,3,5,5,5,5,5,5])
+    
+    numbers: List = field(default_factory=lambda: [0, 1, 2, 3, 4, 5])
+    versions: List = field(default_factory=lambda: [6, 7, 8, 9, 10, 11])
+
+    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    #                                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+    #                                                 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    #characters: List = field(default_factory=lambda: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17,18,19, 20, 21, 22, 23, 24, 25,26,27, 28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,
+    #                                                  1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,
+    #                                                  1,2,3,4,5,6,7,8,9,10,11,12,13,14])
+    #versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+
+def get_mnist_train_dataloader(
+    start_at_version, number_ids, num_versions=None, data_path=None
+):
+    
+    if data_path is None:
+        data_path = os.path.join(os.environ["MONTY_DATA"], "mnist/samples/trainingSample")
+    number_names = [
+        a for a in os.listdir(data_path) if a[0] != "."
+    ]        
+
+    all_number_idx = []    
+    all_version_idx = []
+    for a_idx in number_ids:
+        number = number_names[a_idx]        
+        
+        if num_versions is None:
+            versions_of_char = list(
+                os.listdir(
+                    data_path + "/" + number
+                )
+            )
+            num_versions = len(versions_of_char) - start_at_version
+
+        for v_idx in range(num_versions + start_at_version):
+            if v_idx >= start_at_version:
+                all_number_idx.append(a_idx)
+                all_version_idx.append(v_idx) # skj delete '+ 1' because version starts from 0
+
+
+    return MnistDataloaderArgs(
+        numbers=all_number_idx,
+        versions=all_version_idx,
+    )
+
+
+def get_mnist_eval_dataloader(
+    start_at_version, number_ids, num_versions=None, data_path=None
+):
+    if data_path is None:
+        data_path = os.path.join(os.environ["MONTY_DATA"], "mnist/samples/trainingSample")
+    number_names = [
+        a for a in os.listdir(data_path) if a[0] != "."
+    ]        
+
+    all_number_idx = []    
+    all_version_idx = []
+    for a_idx in number_ids:
+        number = number_names[a_idx]        
+        
+        if num_versions is None:
+            versions_of_char = list(
+                os.listdir(
+                    data_path + "/" + number
+                )
+            )
+            num_versions = len(versions_of_char) - start_at_version
+
+        for v_idx in range(num_versions + start_at_version):
+            if v_idx >= start_at_version:
+                all_number_idx.append(a_idx)
+                all_version_idx.append(v_idx) # skj delete '+ 1' because version starts from 0
+
+    return MnistEvalDataloaderArgs(
+        numbers=all_number_idx,
+        versions=all_version_idx,
+    )
 
 
 @dataclass
@@ -440,7 +578,7 @@ def get_omniglot_train_dataloader(num_versions, alphabet_ids, data_path=None):
                     all_alphabet_idx.append(a_idx)
                     all_character_idx.append(c_idx + 1)
                     all_version_idx.append(v_idx + 1)
-
+    print(all_alphabet_idx, all_character_idx, all_version_idx)
     return OmniglotDataloaderArgs(
         alphabets=all_alphabet_idx,
         characters=all_character_idx,

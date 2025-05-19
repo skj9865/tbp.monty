@@ -117,3 +117,4 @@ class EmbodiedEnvironment(abc.ABC):
 
     def __del__(self):
         self.close()
+

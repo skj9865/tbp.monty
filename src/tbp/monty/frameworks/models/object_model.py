@@ -560,6 +560,7 @@ class GridObjectModel(GraphObjectModel):
             axis=1,
         )
         percent_in_bounds = sum(locations_in_bounds) / len(locations_in_bounds)
+        
         if percent_in_bounds < 0.9:
             logging.info(
                 "Too many observations outside of grid "

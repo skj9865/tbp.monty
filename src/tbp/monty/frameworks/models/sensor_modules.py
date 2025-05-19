@@ -15,6 +15,9 @@ import quaternion
 from scipy.spatial.transform import Rotation
 from skimage.color import rgb2hsv
 
+
+import cv2 # by skj for 2D processing
+
 from tbp.monty.frameworks.models.monty_base import SensorModuleBase
 from tbp.monty.frameworks.models.states import State
 from tbp.monty.frameworks.utils.sensor_processing import (
@@ -116,7 +119,7 @@ class DetailedLoggingSM(SensorModuleBase):
         self.visited_locs = []
         self.visited_normals = []
 
-    def extract_and_add_features(
+    def BU_extract_and_add_features(
         self,
         features,
         obs_3d,
@@ -205,14 +208,218 @@ class DetailedLoggingSM(SensorModuleBase):
             # Flag that PC directions are non-meaningful for e.g. downstream motor
             # policies
             features["pose_fully_defined"] = False
-
+        print(self.features)
         invalid_signals = (not valid_pn) or (not valid_pc)
         if invalid_signals:
             logging.debug("Either the point-normal or pc-directions were ill-defined")
 
         return features, morphological_features, invalid_signals
 
-    def observations_to_comunication_protocol(self, data, on_object_only=True):
+
+    ####################### by skj for 2D processing
+    @staticmethod
+    def get_gradient_vector(img_patch: np.ndarray, center:int, eps=1e-6):
+        # 1) 확실히 ndarray 로 변환 - 복사하지 않으면 view 반환
+        img = np.ascontiguousarray(img_patch, dtype=np.float32)
+
+        gx = cv2.Sobel(img_patch, cv2.CV_64F, 1, 0, ksize=3)
+        gy = cv2.Sobel(img_patch, cv2.CV_64F, 0, 1, ksize=3)
+        g   = np.array([gx.flat[center], gy.flat[center]])
+        mag = np.linalg.norm(g)
+        valid = mag > eps
+        return (g / (mag + eps), valid)
+    
+    @staticmethod
+    def get_hessian_eigens(img_patch: np.ndarray, center:int, σ=1.0):
+        f = cv2.GaussianBlur(img_patch, (0,0), σ)       # 소음 완7
+        fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3)
+        fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3)
+        fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3)
+        H   = np.array([[fxx.flat[center], fxy.flat[center]],
+                        [fxy.flat[center], fyy.flat[center]]])
+        λ, V = np.linalg.eigh(H)              # λ0 ≥ λ1 정렬
+        idx  = np.argsort(-np.abs(λ))
+        return λ[idx][0], λ[idx][1], V[:,idx][:,0], V[:,idx][:,1], True
+    
+        # f = cv2.GaussianBlur(img_patch, (0,0), σ)
+        # fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3).flat[center]
+        # fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3).flat[center]
+        # fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3).flat[center]
+
+        # # Eigenvalues
+        # trace = fxx + fyy
+        # delta = np.sqrt((fxx - fyy)**2 + 4*fxy**2)
+        # λ1 = 0.5 * (trace + delta)
+        # λ2 = 0.5 * (trace - delta)
+
+        # # Eigenvectors
+        # if fxy != 0:
+        #     v1 = np.array([λ1 - fyy, fxy])
+        #     v2 = np.array([λ2 - fyy, fxy])
+        # elif fxx >= fyy:
+        #     v1 = np.array([1, 0])
+        #     v2 = np.array([0, 1])
+        # else:
+        #     v1 = np.array([0, 1])
+        #     v2 = np.array([1, 0])
+        # v1 /= np.linalg.norm(v1)
+        # v2 /= np.linalg.norm(v2)
+
+        # return λ1, λ2, v1, v2, True
+    ####################### by skj for 2D processing
+
+    def extract_and_add_features(
+            self,
+            features: dict,
+            gray_patch: np.ndarray,        # (H, W)  ─ SIFT 등 형상 계산용
+            rgba_patch: np.ndarray,        # (H, W, 3)
+            depth_patch: np.ndarray,       # (H, W)  ─ 가짜 깊이 0.5/1.0
+            center_flat_idx: int,          # row * W + col
+            center_rowcol: int,            # 패치 중앙 row == col
+            sem_mask: np.ndarray,          # (H, W)  ─ on-object 마스크
+        ):
+        """
+        2-D(평면)용 특징 추출:
+        · 그래디언트 → '법선'   (pose_vectors[0])
+        · Hessian 고유벡터      (pose_vectors[1:3])
+        · 비-형상 feature(rgba, hsv, depth 통계)도 그대로 지원
+        Returns:
+            features, morphological_features, invalid_signals
+        """
+        # ────────────────────────────────────────────────────────────
+        # 1.  형상-특징 (Morphological)
+        # ────────────────────────────────────────────────────────────
+        grad_vec, valid_grad = self.get_gradient_vector(gray_patch, center_flat_idx)
+        k1, k2, v1, v2, valid_pc = self.get_hessian_eigens(gray_patch, center_flat_idx)
+
+        pose_fully_defined = abs(k1 - k2) > self.pc1_is_pc2_threshold
+        normal = np.array([0.0,0.0,1.0])
+   
+        morphological_features = {
+            "pose_vectors": np.vstack([
+                #np.append(grad_vec, 0.0),     # z=0 padding
+                normal,
+                np.append(v1, 0.0),
+                np.append(v2, 0.0),
+            ]),
+            #"pose_fully_defined": pose_fully_defined,
+            "pose_fully_defined": bool(abs(k1-k2) > self.pc1_is_pc2_threshold)
+        }
+        
+        #morphological_features["pose_fully_defined"] = bool(pose_fully_defined)
+        #if "principal_curvatures" in self.features :
+        #    features["principal_curvatures"] = np.array([k1,k2])
+
+        # ────────────────────────────────────────────────────────────
+        # 2.  비-형상 feature (RGBA, HSV, Depth 통계)
+        # ────────────────────────────────────────────────────────────
+        # 중심 픽셀 좌표
+        c = center_rowcol
+        if "rgba" in self.features:
+            features["rgba"] = rgba_patch[c, c]
+
+        if "hsv" in self.features:
+            rgb = rgba_patch[c, c] / 255.0
+            hsv = skimage.color.rgb2hsv(rgb[np.newaxis, np.newaxis, :])[0, 0]
+            features["hsv"] = hsv
+
+        if "min_depth" in self.features:
+            valid = depth_patch[sem_mask] < 1.0   # on-object
+            features["min_depth"] = float(depth_patch[sem_mask][valid].min()) \
+                if valid.any() else np.nan
+
+        if "mean_depth" in self.features:
+            valid = depth_patch[sem_mask] < 1.0
+            features["mean_depth"] = float(depth_patch[sem_mask][valid].mean()) \
+                if valid.any() else np.nan
+
+        if any("curvature" in f for f in self.features) and valid_pc:
+            if "principal_curvatures" in self.features:
+                features["principal_curvatures"] = np.array([k1, k2])
+            if "principal_curvatures_log" in self.features:
+                features["principal_curvatures_log"] = log_sign(np.array([k1, k2]))
+            if "gaussian_curvature" in self.features:
+                features["gaussian_curvature"] = k1 * k2
+            if "mean_curvature" in self.features:
+                features["mean_curvature"] = (k1 + k2) / 2
+
+        invalid_signals = False # 법선 계산 실패가 없으므로
+        
+        return features, morphological_features, invalid_signals
+
+
+    def observations_to_comunication_protocol(self, data, on_object_only=True):        
+        patch_dict = data #by skj
+
+        # 1) 회색 패치 (H,W) ─ 그래디언트‧헤시안 계산용
+        gray_patch = patch_dict["rgba"][:, :, 0].astype(np.float32) # by skj
+        
+        h, w = gray_patch.shape # by skj
+        center_rowcol  = h // 2 # by skj
+        center_flat_idx = center_rowcol * w + center_rowcol # by skj
+
+        obs_3d = data["semantic_3d"]        
+        sensor_frame_data = data["sensor_frame_data"]
+        world_camera = data["world_camera"]
+        rgba_feat = data["rgba"]
+        depth_feat = data["depth"].reshape(data["depth"].size, 1).astype(np.float64)
+        # Assuming squared patches
+        center_row_col = rgba_feat.shape[0] // 2
+        # Calculate center ID for flat semantic obs
+        obs_dim = int(np.sqrt(obs_3d.shape[0]))
+        half_obs_dim = obs_dim // 2
+        center_id = half_obs_dim + obs_dim * half_obs_dim
+        # Extract all specified features
+        features = dict()
+        
+        if "object_coverage" in self.features:
+            # Last dimension is semantic ID (integer >0 if on any object)
+            features["object_coverage"] = sum(obs_3d[:, 3] > 0) / len(obs_3d[:, 3])
+            assert (
+                features["object_coverage"] <= 1.0
+            ), "Coverage cannot be greater than 100%"
+
+        
+        rgba_patch  = patch_dict["rgba"]
+        depth_patch = patch_dict["depth"]
+        sem_mask    = (patch_dict["semantic_3d"][:, 3].reshape(gray_patch.shape) > 0)
+        
+        features, morph_feats, invalid = self.extract_and_add_features(
+                features,
+                gray_patch,
+                rgba_patch,
+                depth_patch,
+                center_flat_idx,
+                center_rowcol,
+                sem_mask,
+        )
+
+        # 3) on_object 판정은 semantic_3d 의 4번째 값 사용
+        sem_3d = patch_dict["semantic_3d"]
+
+        # ── 중앙 픽셀의 3D 좌표(x,y,z=0) ─────────────────────────
+        obs_center = sem_3d[center_flat_idx]        # [x, y, z, semantic_id]
+        x, y, z = obs_center[:3]                    # z는 0
+        semantic_id = obs_center[3]
+        #print(semantic_id)
+        # on_object 플래그
+        morph_feats["on_object"] = float(semantic_id > 0)
+
+        observed_state = State(
+            location=np.array([x, y, z]),           # ★ self.current_loc 대신
+            morphological_features=morph_feats,
+            non_morphological_features=features,
+            confidence=1.0,
+            use_state=bool(morph_feats["on_object"]) and not invalid,
+            sender_id=self.sensor_module_id,
+            sender_type="SM",
+        )
+        
+        #print(morph_feats)
+        return observed_state
+
+
+    def BU_observations_to_comunication_protocol(self, data, on_object_only=True):
         """Turn raw observations into instance of State class following CMP.
 
         Args:
@@ -248,7 +455,7 @@ class DetailedLoggingSM(SensorModuleBase):
 
         if obs_3d[center_id][3] or (
             not on_object_only and features["object_coverage"] > 0
-        ):
+        ):            
             (
                 features,
                 morphological_features,
