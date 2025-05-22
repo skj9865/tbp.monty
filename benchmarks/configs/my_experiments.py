@@ -214,8 +214,8 @@ mnist_training = dict(
 	dataset_class=ED.EnvironmentDataset,
 	dataset_args=MnistDatasetArgs(),
 	train_dataloader_class=ED.MnistDataLoader,
-	train_dataloader_args=MnistDataloaderArgs(),
-    #train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=30)
+	#train_dataloader_args=MnistDataloaderArgs(),
+    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=5)
 )
 
 mnist_inference = dict(
@@ -224,7 +224,7 @@ mnist_inference = dict(
         #model_name_or_path=pretrain_dir + "/mnist_training/",
         model_name_or_path = "mnist/log/mnist_training/pretrained",
         do_train=False,
-        n_eval_epochs=1,
+        n_eval_epochs=1,  
     ),
     #logging_config=LoggingConfig(),
     logging_config=CSVLoggingConfig(
@@ -250,7 +250,7 @@ mnist_inference = dict(
                     # Point normal always points up, so they are not useful
                     feature_weights={
                         "patch": {
-                            "pose_vectors": [0, 1, 0],
+                            "pose_vectors": [0, 0, 1],
                         }
                     },
                     # We assume the letter is presented upright
@@ -263,8 +263,8 @@ mnist_inference = dict(
     dataset_class=ED.EnvironmentDataset,
     dataset_args=MnistDatasetArgs(),
     eval_dataloader_class=ED.MnistDataLoader,
-    eval_dataloader_args=MnistEvalDataloaderArgs(),
-    #eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=60)
+    #eval_dataloader_args=MnistEvalDataloaderArgs(),
+    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=10)
 )
 
 

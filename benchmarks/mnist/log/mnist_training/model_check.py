@@ -7,7 +7,8 @@ from load_object_model import load_object_model   # 함수가 있는 모듈
 DMC_PRETRAIN_DIR = Path("")   # 필요하면 환경 변수 대신 직접 지정
 model = load_object_model(
     model_name="model.pt",   # 서브폴더 이름 = 실험명
-    object_name="1_5",         # 그래프에 저장된 key (예: "digit_6")
+    object_name="4_1",         # 그래프에 저장된 key (예: "digit_6")
+    #0_0, 1_5, 2_9, 3_3, 4_1 , 5_7, 6_6, 7_2, 8_8, and 9_4
     features=("rgba",),            # 색상까지 함께 읽기
     checkpoint=None,               # 마지막 model.pt
     lm_id=0,
@@ -17,18 +18,24 @@ model = load_object_model(
 # model = model - [0, 1.5, 0]      # 평행 이동
 # model = model.rotated([0, 0, 90], degrees=True)
 
+# ───────── 색상 벡터 만들기 ─────────
+# 밝기(0‥1) → 컬러맵(예: inferno)으로 변환
+brightness = model.rgba[:, 0]        # R=G=B → 회색값
+colors = plt.cm.inferno(1-brightness)  # inferno / viridis / plasma 등
+
 # 3) 3-D 플롯
 fig = plt.figure(figsize=(6, 6))
 ax  = fig.add_subplot(111, projection="3d")
-
+ax.scatter(model.x, model.y, model.z,
+           c=colors, s=8, linewidth=0)
 # 색상 정보가 있으면 사용, 없으면 단색
-colors = getattr(model, "rgba", None)
-if colors is not None:
-    ax.scatter(model.x, model.y, model.z, c=colors[:, :3])
-else:
-    ax.scatter(model.x, model.y, model.z, s=5, color="royalblue")
+# colors = getattr(model, "rgba", None)
+# if colors is not None:
+#     ax.scatter(model.x, model.y, model.z, c=colors[:, :3])
+# else:
+#     ax.scatter(model.x, model.y, model.z, s=5, color="royalblue")
 
 ax.set_xlabel("x"); ax.set_ylabel("y"); ax.set_zlabel("z")
-ax.set_box_aspect([1, 1, 1])       # 큐브 비율
+ax.set_box_aspect([1, 1, 0.1])       # 큐브 비율
 plt.show()
 
