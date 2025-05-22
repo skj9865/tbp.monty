@@ -41,7 +41,8 @@ class ExperimentArgs:
     show_sensor_output: bool = False
     max_train_steps: int = 1000
     max_eval_steps: int = 500
-    max_total_steps: int = 4 * (max_train_steps + max_eval_steps)  # Total number of
+    max_total_steps : int = 500 # by skj
+    #max_total_steps: int = 4 * (max_train_steps + max_eval_steps)  # Total number of
     # episode steps that can be taken before timing out, regardless of e.g. whether LMs
     # receive sensory information and therefore perform a true matching step (due to
     # e.g. being off the object)
@@ -411,20 +412,20 @@ class MnistDatasetArgs: # by skj
     env_init_args: Dict = field(default_factory=lambda: dict())
     transform: Union[Callable, list, None] = None
 
-    def __post_init__(self):
-        self.transform = [
-            DepthTo3DLocations(
-                agent_id="agent_id_0",
-                sensor_ids=["patch"],
-                resolutions=np.array([[10, 10]]),
-                world_coord=True,
-                zooms=1,
-                get_all_points=True,
-                use_semantic_sensor=False,
-                depth_clip_sensors=(0,),
-                clip_value=1.1,                
-            ),
-        ]
+    # def __post_init__(self):
+    #     self.transform = [
+    #         DepthTo3DLocations(
+    #             agent_id="agent_id_0",
+    #             sensor_ids=["patch"],
+    #             resolutions=np.array([[10, 10]]),
+    #             world_coord=True,
+    #             zooms=1,
+    #             get_all_points=True,
+    #             use_semantic_sensor=False,
+    #             depth_clip_sensors=(0,),
+    #             clip_value=1.1,                
+    #         ),
+    #     ]
 
 @dataclass
 class MnistDataloaderArgs: # by skj
@@ -433,16 +434,13 @@ class MnistDataloaderArgs: # by skj
     #characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3,1,2,3,1,2,3,4,5,6,1,2,3])
     #versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1,2,2,2,2,2,2,3,3,3,3,3,3,5,5,5,5,5,5])
     
-    numbers: List = field(default_factory=lambda: [5])
-    versions: List = field(default_factory=lambda: [0])
+    #numbers: List = field(default_factory=lambda: [0,1,2,3,4,5,6,7,8,9])
+    #versions: List = field(default_factory=lambda: [0,0,0,0,0,0,0,0,0,0])
     
-    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    #                                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-    #                                                 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
-    #characters: List = field(default_factory=lambda: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17,18,19, 20, 21, 22, 23, 24, 25,26,27, 28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,
-    #                                                  1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,
-    #                                                  1,2,3,4,5,6,7,8,9,10,11,12,13,14])
-    #versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+    numbers: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
 
 @dataclass
 class MnistEvalDataloaderArgs: # by skj
@@ -452,16 +450,13 @@ class MnistEvalDataloaderArgs: # by skj
     #characters: List = field(default_factory=lambda: [1, 2, 3, 1, 2, 3,1,2,3,1,2,3,4,5,6,1,2,3])
     #versions: List = field(default_factory=lambda: [1, 1, 1, 1, 1, 1,2,2,2,2,2,2,3,3,3,3,3,3,5,5,5,5,5,5])
     
-    numbers: List = field(default_factory=lambda: [0, 1, 2, 3, 4, 5])
-    versions: List = field(default_factory=lambda: [6, 7, 8, 9, 10, 11])
+    # numbers: List = field(default_factory=lambda: [0, 1, 2, 3, 4, 5])
+    # versions: List = field(default_factory=lambda: [6, 7, 8, 9, 10, 11])
 
-    #alphabets: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    #                                                 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
-    #                                                 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
-    #characters: List = field(default_factory=lambda: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15, 16, 17,18,19, 20, 21, 22, 23, 24, 25,26,27, 28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,
-    #                                                  1, 2, 3,4,5,6,7,8,9,10,11,12,13,14,15,16,
-    #                                                  1,2,3,4,5,6,7,8,9,10,11,12,13,14])
-    #versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+    numbers: List = field(default_factory=lambda: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                                                    1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+                                                    2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2])
+    versions: List = field(default_factory=lambda: [5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
 
 def get_mnist_train_dataloader(
     start_at_version, number_ids, num_versions=None, data_path=None
@@ -530,6 +525,37 @@ def get_mnist_eval_dataloader(
         versions=all_version_idx,
     )
 
+def get_mnist_test_dataloader(
+    start_at_version, number_ids, num_versions=None, data_path=None
+):
+    if data_path is None:
+        data_path = os.path.join(os.environ["MONTY_DATA"], "mnist/test/testSet")
+    number_names = [
+        a for a in os.listdir(data_path) if a[0] != "."
+    ]        
+
+    all_number_idx = []
+    all_version_idx = []
+    for a_idx in number_ids:
+        number = number_names[a_idx]        
+        
+        if num_versions is None:
+            versions_of_char = list(
+                os.listdir(
+                    data_path + "/" + number
+                )
+            )
+            num_versions = len(versions_of_char) - start_at_version
+
+        for v_idx in range(num_versions + start_at_version):
+            if v_idx >= start_at_version:
+                all_number_idx.append(a_idx)
+                all_version_idx.append(v_idx) # skj delete '+ 1' because version starts from 0
+
+    return MnistEvalDataloaderArgs(
+        numbers=all_number_idx,
+        versions=all_version_idx,
+    )
 
 @dataclass
 class WorldImageDataloaderArgs:

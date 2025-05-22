@@ -921,15 +921,24 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         #print(action.name)
 
         # patch : (H, W) uint8, 0=배경·>0=글자        
-        h, w = patch.shape        
-        yy, xx = np.mgrid[0:h, 0:w]
+        h, w = patch.shape               
+
+        # 패치 왼쪽-위 모서리의 전역 위치
+        top  = self.current_loc[0] - self.patch_size // 2
+        left = self.current_loc[1] - self.patch_size // 2
+
+        yy, xx = np.mgrid[0:h, 0:w]        # 0‥h-1, 0‥w-1
+        yy = yy + top                      # 행(row) → 전역 y
+        xx = xx + left                     # 열(col) → 전역 x
+
         zz = np.zeros_like(xx, dtype=np.float32)
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
-        sem_id = (patch > 20).astype(np.float32)
+        sem_id = (patch > 100).astype(np.float32)
         semantic_3d = np.stack([xx, yy, zz, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
+        
         
         #print(semantic_3d)
         #depth = 1.2 - gaussian_filter(np.array(~patch, dtype=float), sigma=0.5)
@@ -942,6 +951,7 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
 
         # ── 5) world_camera : 단순 평면이므로 단위 행렬 ───────────────
         world_camera = np.eye(4, dtype=np.float32)
+        #print(self.current_loc)
         obs = {
             "agent_id_0": {
                 "patch": {

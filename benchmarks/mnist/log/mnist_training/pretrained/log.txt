@@ -1,4 +1,4 @@
-INFO:root:Logger initialized at 2025-05-22 10:46:26.502216
+INFO:root:Logger initialized at 2025-05-22 11:17:03.988056
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:Running a simulation to model object: 0_0
 WARNING:root:Output file mnist/log/mnist_training/pretrained/train_stats.csv already exists. This file will be moved to mnist/log/mnist_training/pretrained/train_stats_old.csv
@@ -9,215 +9,6 @@ INFO:root:0_0 not in memory ([])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 0_0
 INFO:root:built graph Data(
-  x=[134, 17],
-  pos=[134, 3],
-  norm=[134, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 804],
-  edge_attr=[804, 3]
-)
-INFO:root:Added new graph with id 0_0 to memory.
-INFO:root:
-
-Going from 0 to 1 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_1
-INFO:root:Running a simulation to model object: 0_0
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:0_0 already in memory (['0_0'])
-INFO:root:Updating existing graph for 0_0
-INFO:root:building graph
-INFO:root:Extended graph 0_0 with new points. New model:
-Data(
-  x=[160, 17],
-  pos=[160, 3],
-  norm=[160, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 960],
-  edge_attr=[960, 3]
-)
-INFO:root:
-
-Going from 1 to 2 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_2
-INFO:root:Running a simulation to model object: 0_0
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:0_0 already in memory (['0_0'])
-INFO:root:Updating existing graph for 0_0
-INFO:root:building graph
-INFO:root:Extended graph 0_0 with new points. New model:
-Data(
-  x=[181, 17],
-  pos=[181, 3],
-  norm=[181, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1086],
-  edge_attr=[1086, 3]
-)
-INFO:root:
-
-Going from 2 to 3 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_3
-INFO:root:Running a simulation to model object: 0_0
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:0_0 already in memory (['0_0'])
-INFO:root:Updating existing graph for 0_0
-INFO:root:building graph
-INFO:root:Extended graph 0_0 with new points. New model:
-Data(
-  x=[210, 17],
-  pos=[210, 3],
-  norm=[210, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1260],
-  edge_attr=[1260, 3]
-)
-INFO:root:
-
-Going from 3 to 4 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_4
-INFO:root:Running a simulation to model object: 0_0
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:0_0 already in memory (['0_0'])
-INFO:root:Updating existing graph for 0_0
-INFO:root:building graph
-INFO:root:Extended graph 0_0 with new points. New model:
-Data(
-  x=[219, 17],
-  pos=[219, 3],
-  norm=[219, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1314],
-  edge_attr=[1314, 3]
-)
-INFO:root:
-
-Going from 4 to 5 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_0
-INFO:root:Running a simulation to model object: 4_1
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:4_1 not in memory (['0_0'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 4_1
-INFO:root:built graph Data(
-  x=[34, 17],
-  pos=[34, 3],
-  norm=[34, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 204],
-  edge_attr=[204, 3]
-)
-INFO:root:Added new graph with id 4_1 to memory.
-INFO:root:
-
-Going from 5 to 6 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_1
-INFO:root:Running a simulation to model object: 4_1
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:4_1 already in memory (['0_0', '4_1'])
-INFO:root:Updating existing graph for 4_1
-INFO:root:building graph
-INFO:root:Extended graph 4_1 with new points. New model:
-Data(
-  x=[100, 17],
-  pos=[100, 3],
-  norm=[100, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 600],
-  edge_attr=[600, 3]
-)
-INFO:root:
-
-Going from 6 to 7 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_2
-INFO:root:Running a simulation to model object: 4_1
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:4_1 already in memory (['0_0', '4_1'])
-INFO:root:Updating existing graph for 4_1
-INFO:root:building graph
-INFO:root:Extended graph 4_1 with new points. New model:
-Data(
-  x=[132, 17],
-  pos=[132, 3],
-  norm=[132, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 792],
-  edge_attr=[792, 3]
-)
-INFO:root:
-
-Going from 7 to 8 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_3
-INFO:root:Running a simulation to model object: 4_1
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:4_1 already in memory (['0_0', '4_1'])
-INFO:root:Updating existing graph for 4_1
-INFO:root:building graph
-INFO:root:Extended graph 4_1 with new points. New model:
-Data(
   x=[159, 17],
   pos=[159, 3],
   norm=[159, 3],
@@ -232,9 +23,348 @@ Data(
   edge_index=[2, 954],
   edge_attr=[954, 3]
 )
+INFO:root:Added new graph with id 0_0 to memory.
 INFO:root:
 
-Going from 8 to 9 of 50
+Going from 0 to 1 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_1
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[179, 17],
+  pos=[179, 3],
+  norm=[179, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1074],
+  edge_attr=[1074, 3]
+)
+INFO:root:
+
+Going from 1 to 2 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_2
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[202, 17],
+  pos=[202, 3],
+  norm=[202, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1212],
+  edge_attr=[1212, 3]
+)
+INFO:root:
+
+Going from 2 to 3 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_3
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[227, 17],
+  pos=[227, 3],
+  norm=[227, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1362],
+  edge_attr=[1362, 3]
+)
+INFO:root:
+
+Going from 3 to 4 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_4
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[239, 17],
+  pos=[239, 3],
+  norm=[239, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1434],
+  edge_attr=[1434, 3]
+)
+INFO:root:
+
+Going from 4 to 5 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_5
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[240, 17],
+  pos=[240, 3],
+  norm=[240, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1440],
+  edge_attr=[1440, 3]
+)
+INFO:root:
+
+Going from 5 to 6 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_6
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[243, 17],
+  pos=[243, 3],
+  norm=[243, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1458],
+  edge_attr=[1458, 3]
+)
+INFO:root:
+
+Going from 6 to 7 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_7
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[251, 17],
+  pos=[251, 3],
+  norm=[251, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1506],
+  edge_attr=[1506, 3]
+)
+INFO:root:
+
+Going from 7 to 8 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_8
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[253, 17],
+  pos=[253, 3],
+  norm=[253, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1518],
+  edge_attr=[1518, 3]
+)
+INFO:root:
+
+Going from 8 to 9 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_9
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:0_0 already in memory (['0_0'])
+INFO:root:Updating existing graph for 0_0
+INFO:root:building graph
+INFO:root:Extended graph 0_0 with new points. New model:
+Data(
+  x=[254, 17],
+  pos=[254, 3],
+  norm=[254, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1524],
+  edge_attr=[1524, 3]
+)
+INFO:root:
+
+Going from 9 to 10 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_0
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 not in memory (['0_0'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 4_1
+INFO:root:built graph Data(
+  x=[59, 17],
+  pos=[59, 3],
+  norm=[59, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 354],
+  edge_attr=[354, 3]
+)
+INFO:root:Added new graph with id 4_1 to memory.
+INFO:root:
+
+Going from 10 to 11 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_1
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[149, 17],
+  pos=[149, 3],
+  norm=[149, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 894],
+  edge_attr=[894, 3]
+)
+INFO:root:
+
+Going from 11 to 12 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_2
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[177, 17],
+  pos=[177, 3],
+  norm=[177, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1062],
+  edge_attr=[1062, 3]
+)
+INFO:root:
+
+Going from 12 to 13 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_3
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[203, 17],
+  pos=[203, 3],
+  norm=[203, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1218],
+  edge_attr=[1218, 3]
+)
+INFO:root:
+
+Going from 13 to 14 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_4
 INFO:root:Running a simulation to model object: 4_1
 INFO:root:
@@ -244,9 +374,9 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[185, 17],
-  pos=[185, 3],
-  norm=[185, 3],
+  x=[226, 17],
+  pos=[226, 3],
+  norm=[226, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -255,12 +385,142 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1110],
-  edge_attr=[1110, 3]
+  edge_index=[2, 1356],
+  edge_attr=[1356, 3]
 )
 INFO:root:
 
-Going from 9 to 10 of 50
+Going from 14 to 15 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_5
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[231, 17],
+  pos=[231, 3],
+  norm=[231, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1386],
+  edge_attr=[1386, 3]
+)
+INFO:root:
+
+Going from 15 to 16 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_6
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[233, 17],
+  pos=[233, 3],
+  norm=[233, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1398],
+  edge_attr=[1398, 3]
+)
+INFO:root:
+
+Going from 16 to 17 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_7
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[235, 17],
+  pos=[235, 3],
+  norm=[235, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1410],
+  edge_attr=[1410, 3]
+)
+INFO:root:
+
+Going from 17 to 18 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_8
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[235, 17],
+  pos=[235, 3],
+  norm=[235, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1410],
+  edge_attr=[1410, 3]
+)
+INFO:root:
+
+Going from 18 to 19 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/4/img_9
+INFO:root:Running a simulation to model object: 4_1
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:4_1 already in memory (['0_0', '4_1'])
+INFO:root:Updating existing graph for 4_1
+INFO:root:building graph
+INFO:root:Extended graph 4_1 with new points. New model:
+Data(
+  x=[241, 17],
+  pos=[241, 3],
+  norm=[241, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1446],
+  edge_attr=[1446, 3]
+)
+INFO:root:
+
+Going from 19 to 20 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
 INFO:root:Running a simulation to model object: 7_2
 INFO:root:
@@ -269,9 +529,9 @@ INFO:root:7_2 not in memory (['0_0', '4_1'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 7_2
 INFO:root:built graph Data(
-  x=[41, 17],
-  pos=[41, 3],
-  norm=[41, 3],
+  x=[63, 17],
+  pos=[63, 3],
+  norm=[63, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -280,13 +540,13 @@ INFO:root:built graph Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 246],
-  edge_attr=[246, 3]
+  edge_index=[2, 378],
+  edge_attr=[378, 3]
 )
 INFO:root:Added new graph with id 7_2 to memory.
 INFO:root:
 
-Going from 10 to 11 of 50
+Going from 20 to 21 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_1
 INFO:root:Running a simulation to model object: 7_2
 INFO:root:
@@ -296,9 +556,9 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[55, 17],
-  pos=[55, 3],
-  norm=[55, 3],
+  x=[81, 17],
+  pos=[81, 3],
+  norm=[81, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -307,12 +567,12 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 330],
-  edge_attr=[330, 3]
+  edge_index=[2, 486],
+  edge_attr=[486, 3]
 )
 INFO:root:
 
-Going from 11 to 12 of 50
+Going from 21 to 22 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_2
 INFO:root:Running a simulation to model object: 7_2
 INFO:root:
@@ -321,110 +581,6 @@ INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
 INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
-Data(
-  x=[94, 17],
-  pos=[94, 3],
-  norm=[94, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 564],
-  edge_attr=[564, 3]
-)
-INFO:root:
-
-Going from 12 to 13 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_3
-INFO:root:Running a simulation to model object: 7_2
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
-INFO:root:Updating existing graph for 7_2
-INFO:root:building graph
-INFO:root:Extended graph 7_2 with new points. New model:
-Data(
-  x=[103, 17],
-  pos=[103, 3],
-  norm=[103, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 618],
-  edge_attr=[618, 3]
-)
-INFO:root:
-
-Going from 13 to 14 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_4
-INFO:root:Running a simulation to model object: 7_2
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
-INFO:root:Updating existing graph for 7_2
-INFO:root:building graph
-INFO:root:Extended graph 7_2 with new points. New model:
-Data(
-  x=[114, 17],
-  pos=[114, 3],
-  norm=[114, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 684],
-  edge_attr=[684, 3]
-)
-INFO:root:
-
-Going from 14 to 15 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_0
-INFO:root:Running a simulation to model object: 3_3
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:3_3 not in memory (['0_0', '4_1', '7_2'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 3_3
-INFO:root:built graph Data(
-  x=[48, 17],
-  pos=[48, 3],
-  norm=[48, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 288],
-  edge_attr=[288, 3]
-)
-INFO:root:Added new graph with id 3_3 to memory.
-INFO:root:
-
-Going from 15 to 16 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_1
-INFO:root:Running a simulation to model object: 3_3
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
-INFO:root:Updating existing graph for 3_3
-INFO:root:building graph
-INFO:root:Extended graph 3_3 with new points. New model:
 Data(
   x=[122, 17],
   pos=[122, 3],
@@ -442,19 +598,19 @@ Data(
 )
 INFO:root:
 
-Going from 16 to 17 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_2
-INFO:root:Running a simulation to model object: 3_3
+Going from 22 to 23 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_3
+INFO:root:Running a simulation to model object: 7_2
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
-INFO:root:Updating existing graph for 3_3
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
-INFO:root:Extended graph 3_3 with new points. New model:
+INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[162, 17],
-  pos=[162, 3],
-  norm=[162, 3],
+  x=[125, 17],
+  pos=[125, 3],
+  norm=[125, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -463,24 +619,24 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 972],
-  edge_attr=[972, 3]
+  edge_index=[2, 750],
+  edge_attr=[750, 3]
 )
 INFO:root:
 
-Going from 17 to 18 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_3
-INFO:root:Running a simulation to model object: 3_3
+Going from 23 to 24 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_4
+INFO:root:Running a simulation to model object: 7_2
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
-INFO:root:Updating existing graph for 3_3
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
-INFO:root:Extended graph 3_3 with new points. New model:
+INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[187, 17],
-  pos=[187, 3],
-  norm=[187, 3],
+  x=[140, 17],
+  pos=[140, 3],
+  norm=[140, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -489,150 +645,20 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1122],
-  edge_attr=[1122, 3]
+  edge_index=[2, 840],
+  edge_attr=[840, 3]
 )
 INFO:root:
 
-Going from 18 to 19 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_4
-INFO:root:Running a simulation to model object: 3_3
+Going from 24 to 25 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_5
+INFO:root:Running a simulation to model object: 7_2
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
-INFO:root:Updating existing graph for 3_3
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
-INFO:root:Extended graph 3_3 with new points. New model:
-Data(
-  x=[194, 17],
-  pos=[194, 3],
-  norm=[194, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1164],
-  edge_attr=[1164, 3]
-)
-INFO:root:
-
-Going from 19 to 20 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_0
-INFO:root:Running a simulation to model object: 9_4
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:9_4 not in memory (['0_0', '4_1', '7_2', '3_3'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 9_4
-INFO:root:built graph Data(
-  x=[70, 17],
-  pos=[70, 3],
-  norm=[70, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 420],
-  edge_attr=[420, 3]
-)
-INFO:root:Added new graph with id 9_4 to memory.
-INFO:root:
-
-Going from 20 to 21 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_1
-INFO:root:Running a simulation to model object: 9_4
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
-INFO:root:Updating existing graph for 9_4
-INFO:root:building graph
-INFO:root:Extended graph 9_4 with new points. New model:
-Data(
-  x=[90, 17],
-  pos=[90, 3],
-  norm=[90, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 540],
-  edge_attr=[540, 3]
-)
-INFO:root:
-
-Going from 21 to 22 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_2
-INFO:root:Running a simulation to model object: 9_4
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
-INFO:root:Updating existing graph for 9_4
-INFO:root:building graph
-INFO:root:Extended graph 9_4 with new points. New model:
-Data(
-  x=[117, 17],
-  pos=[117, 3],
-  norm=[117, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 702],
-  edge_attr=[702, 3]
-)
-INFO:root:
-
-Going from 22 to 23 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_3
-INFO:root:Running a simulation to model object: 9_4
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
-INFO:root:Updating existing graph for 9_4
-INFO:root:building graph
-INFO:root:Extended graph 9_4 with new points. New model:
-Data(
-  x=[138, 17],
-  pos=[138, 3],
-  norm=[138, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 828],
-  edge_attr=[828, 3]
-)
-INFO:root:
-
-Going from 23 to 24 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_4
-INFO:root:Running a simulation to model object: 9_4
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
-INFO:root:Updating existing graph for 9_4
-INFO:root:building graph
-INFO:root:Extended graph 9_4 with new points. New model:
+INFO:root:Extended graph 7_2 with new points. New model:
 Data(
   x=[144, 17],
   pos=[144, 3],
@@ -650,18 +676,122 @@ Data(
 )
 INFO:root:
 
-Going from 24 to 25 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_0
-INFO:root:Running a simulation to model object: 1_5
+Going from 25 to 26 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_6
+INFO:root:Running a simulation to model object: 7_2
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:1_5 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
+INFO:root:building graph
+INFO:root:Extended graph 7_2 with new points. New model:
+Data(
+  x=[164, 17],
+  pos=[164, 3],
+  norm=[164, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 984],
+  edge_attr=[984, 3]
+)
+INFO:root:
+
+Going from 26 to 27 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_7
+INFO:root:Running a simulation to model object: 7_2
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
+INFO:root:building graph
+INFO:root:Extended graph 7_2 with new points. New model:
+Data(
+  x=[176, 17],
+  pos=[176, 3],
+  norm=[176, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1056],
+  edge_attr=[1056, 3]
+)
+INFO:root:
+
+Going from 27 to 28 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_8
+INFO:root:Running a simulation to model object: 7_2
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
+INFO:root:building graph
+INFO:root:Extended graph 7_2 with new points. New model:
+Data(
+  x=[176, 17],
+  pos=[176, 3],
+  norm=[176, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1056],
+  edge_attr=[1056, 3]
+)
+INFO:root:
+
+Going from 28 to 29 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_9
+INFO:root:Running a simulation to model object: 7_2
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:7_2 already in memory (['0_0', '4_1', '7_2'])
+INFO:root:Updating existing graph for 7_2
+INFO:root:building graph
+INFO:root:Extended graph 7_2 with new points. New model:
+Data(
+  x=[188, 17],
+  pos=[188, 3],
+  norm=[188, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1128],
+  edge_attr=[1128, 3]
+)
+INFO:root:
+
+Going from 29 to 30 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_0
+INFO:root:Running a simulation to model object: 3_3
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:3_3 not in memory (['0_0', '4_1', '7_2'])
 INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 1_5
+INFO:root:init object model with id 3_3
 INFO:root:built graph Data(
-  x=[45, 17],
-  pos=[45, 3],
-  norm=[45, 3],
+  x=[82, 17],
+  pos=[82, 3],
+  norm=[82, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -670,25 +800,25 @@ INFO:root:built graph Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 270],
-  edge_attr=[270, 3]
+  edge_index=[2, 492],
+  edge_attr=[492, 3]
 )
-INFO:root:Added new graph with id 1_5 to memory.
+INFO:root:Added new graph with id 3_3 to memory.
 INFO:root:
 
-Going from 25 to 26 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_1
-INFO:root:Running a simulation to model object: 1_5
+Going from 30 to 31 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_1
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
-INFO:root:Updating existing graph for 1_5
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 1_5 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[68, 17],
-  pos=[68, 3],
-  norm=[68, 3],
+  x=[164, 17],
+  pos=[164, 3],
+  norm=[164, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -697,24 +827,24 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 408],
-  edge_attr=[408, 3]
+  edge_index=[2, 984],
+  edge_attr=[984, 3]
 )
 INFO:root:
 
-Going from 26 to 27 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_2
-INFO:root:Running a simulation to model object: 1_5
+Going from 31 to 32 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_2
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
-INFO:root:Updating existing graph for 1_5
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 1_5 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[72, 17],
-  pos=[72, 3],
-  norm=[72, 3],
+  x=[204, 17],
+  pos=[204, 3],
+  norm=[204, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -723,24 +853,24 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 432],
-  edge_attr=[432, 3]
+  edge_index=[2, 1224],
+  edge_attr=[1224, 3]
 )
 INFO:root:
 
-Going from 27 to 28 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_3
-INFO:root:Running a simulation to model object: 1_5
+Going from 32 to 33 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_3
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
-INFO:root:Updating existing graph for 1_5
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 1_5 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[79, 17],
-  pos=[79, 3],
-  norm=[79, 3],
+  x=[222, 17],
+  pos=[222, 3],
+  norm=[222, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -749,24 +879,24 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 474],
-  edge_attr=[474, 3]
+  edge_index=[2, 1332],
+  edge_attr=[1332, 3]
 )
 INFO:root:
 
-Going from 28 to 29 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_4
-INFO:root:Running a simulation to model object: 1_5
+Going from 33 to 34 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_4
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
-INFO:root:Updating existing graph for 1_5
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 1_5 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[91, 17],
-  pos=[91, 3],
-  norm=[91, 3],
+  x=[228, 17],
+  pos=[228, 3],
+  norm=[228, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -775,254 +905,20 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 546],
-  edge_attr=[546, 3]
+  edge_index=[2, 1368],
+  edge_attr=[1368, 3]
 )
 INFO:root:
 
-Going from 29 to 30 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_0
-INFO:root:Running a simulation to model object: 6_6
+Going from 34 to 35 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_5
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:6_6 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 6_6
-INFO:root:built graph Data(
-  x=[63, 17],
-  pos=[63, 3],
-  norm=[63, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 378],
-  edge_attr=[378, 3]
-)
-INFO:root:Added new graph with id 6_6 to memory.
-INFO:root:
-
-Going from 30 to 31 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_1
-INFO:root:Running a simulation to model object: 6_6
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
-INFO:root:Updating existing graph for 6_6
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 6_6 with new points. New model:
-Data(
-  x=[122, 17],
-  pos=[122, 3],
-  norm=[122, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 732],
-  edge_attr=[732, 3]
-)
-INFO:root:
-
-Going from 31 to 32 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_2
-INFO:root:Running a simulation to model object: 6_6
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
-INFO:root:Updating existing graph for 6_6
-INFO:root:building graph
-INFO:root:Extended graph 6_6 with new points. New model:
-Data(
-  x=[141, 17],
-  pos=[141, 3],
-  norm=[141, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 846],
-  edge_attr=[846, 3]
-)
-INFO:root:
-
-Going from 32 to 33 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_3
-INFO:root:Running a simulation to model object: 6_6
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
-INFO:root:Updating existing graph for 6_6
-INFO:root:building graph
-INFO:root:Extended graph 6_6 with new points. New model:
-Data(
-  x=[161, 17],
-  pos=[161, 3],
-  norm=[161, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 966],
-  edge_attr=[966, 3]
-)
-INFO:root:
-
-Going from 33 to 34 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_4
-INFO:root:Running a simulation to model object: 6_6
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
-INFO:root:Updating existing graph for 6_6
-INFO:root:building graph
-INFO:root:Extended graph 6_6 with new points. New model:
-Data(
-  x=[199, 17],
-  pos=[199, 3],
-  norm=[199, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1194],
-  edge_attr=[1194, 3]
-)
-INFO:root:
-
-Going from 34 to 35 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_0
-INFO:root:Running a simulation to model object: 5_7
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:5_7 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 5_7
-INFO:root:built graph Data(
-  x=[72, 17],
-  pos=[72, 3],
-  norm=[72, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 432],
-  edge_attr=[432, 3]
-)
-INFO:root:Added new graph with id 5_7 to memory.
-INFO:root:
-
-Going from 35 to 36 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_1
-INFO:root:Running a simulation to model object: 5_7
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
-INFO:root:Updating existing graph for 5_7
-INFO:root:building graph
-INFO:root:Extended graph 5_7 with new points. New model:
-Data(
-  x=[148, 17],
-  pos=[148, 3],
-  norm=[148, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 888],
-  edge_attr=[888, 3]
-)
-INFO:root:
-
-Going from 36 to 37 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_2
-INFO:root:Running a simulation to model object: 5_7
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
-INFO:root:Updating existing graph for 5_7
-INFO:root:building graph
-INFO:root:Extended graph 5_7 with new points. New model:
-Data(
-  x=[166, 17],
-  pos=[166, 3],
-  norm=[166, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 996],
-  edge_attr=[996, 3]
-)
-INFO:root:
-
-Going from 37 to 38 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_3
-INFO:root:Running a simulation to model object: 5_7
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
-INFO:root:Updating existing graph for 5_7
-INFO:root:building graph
-INFO:root:Extended graph 5_7 with new points. New model:
-Data(
-  x=[215, 17],
-  pos=[215, 3],
-  norm=[215, 3],
-  feature_mapping={
-    node_ids=[2],
-    pose_vectors=[2],
-    pose_fully_defined=[2],
-    on_object=[2],
-    rgba=[2],
-    principal_curvatures_log=[2]
-  },
-  edge_index=[2, 1290],
-  edge_attr=[1290, 3]
-)
-INFO:root:
-
-Going from 38 to 39 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_4
-INFO:root:Running a simulation to model object: 5_7
-INFO:root:
----Updating memory of learning_module_0---
-INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
-INFO:root:Updating existing graph for 5_7
-INFO:root:building graph
-INFO:root:Extended graph 5_7 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
 Data(
   x=[229, 17],
   pos=[229, 3],
@@ -1040,18 +936,19 @@ Data(
 )
 INFO:root:
 
-Going from 39 to 40 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_0
-INFO:root:Running a simulation to model object: 8_8
+Going from 35 to 36 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_6
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:8_8 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 8_8
-INFO:root:built graph Data(
-  x=[120, 17],
-  pos=[120, 3],
-  norm=[120, 3],
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
+INFO:root:building graph
+INFO:root:Extended graph 3_3 with new points. New model:
+Data(
+  x=[237, 17],
+  pos=[237, 3],
+  norm=[237, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1060,21 +957,150 @@ INFO:root:built graph Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 720],
-  edge_attr=[720, 3]
+  edge_index=[2, 1422],
+  edge_attr=[1422, 3]
 )
-INFO:root:Added new graph with id 8_8 to memory.
 INFO:root:
 
-Going from 40 to 41 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_1
-INFO:root:Running a simulation to model object: 8_8
+Going from 36 to 37 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_7
+INFO:root:Running a simulation to model object: 3_3
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
-INFO:root:Updating existing graph for 8_8
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
-INFO:root:Extended graph 8_8 with new points. New model:
+INFO:root:Extended graph 3_3 with new points. New model:
+Data(
+  x=[238, 17],
+  pos=[238, 3],
+  norm=[238, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1428],
+  edge_attr=[1428, 3]
+)
+INFO:root:
+
+Going from 37 to 38 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_8
+INFO:root:Running a simulation to model object: 3_3
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
+INFO:root:building graph
+INFO:root:Extended graph 3_3 with new points. New model:
+Data(
+  x=[239, 17],
+  pos=[239, 3],
+  norm=[239, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1434],
+  edge_attr=[1434, 3]
+)
+INFO:root:
+
+Going from 38 to 39 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_9
+INFO:root:Running a simulation to model object: 3_3
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:3_3 already in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Updating existing graph for 3_3
+INFO:root:building graph
+INFO:root:Extended graph 3_3 with new points. New model:
+Data(
+  x=[239, 17],
+  pos=[239, 3],
+  norm=[239, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1434],
+  edge_attr=[1434, 3]
+)
+INFO:root:
+
+Going from 39 to 40 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_0
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 not in memory (['0_0', '4_1', '7_2', '3_3'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 9_4
+INFO:root:built graph Data(
+  x=[99, 17],
+  pos=[99, 3],
+  norm=[99, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 594],
+  edge_attr=[594, 3]
+)
+INFO:root:Added new graph with id 9_4 to memory.
+INFO:root:
+
+Going from 40 to 41 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_1
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[113, 17],
+  pos=[113, 3],
+  norm=[113, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 678],
+  edge_attr=[678, 3]
+)
+INFO:root:
+
+Going from 41 to 42 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_2
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
 Data(
   x=[143, 17],
   pos=[143, 3],
@@ -1092,15 +1118,483 @@ Data(
 )
 INFO:root:
 
-Going from 41 to 42 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_2
-INFO:root:Running a simulation to model object: 8_8
+Going from 42 to 43 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_3
+INFO:root:Running a simulation to model object: 9_4
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
-INFO:root:Updating existing graph for 8_8
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
-INFO:root:Extended graph 8_8 with new points. New model:
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[174, 17],
+  pos=[174, 3],
+  norm=[174, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1044],
+  edge_attr=[1044, 3]
+)
+INFO:root:
+
+Going from 43 to 44 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_4
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[176, 17],
+  pos=[176, 3],
+  norm=[176, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1056],
+  edge_attr=[1056, 3]
+)
+INFO:root:
+
+Going from 44 to 45 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_5
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[187, 17],
+  pos=[187, 3],
+  norm=[187, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1122],
+  edge_attr=[1122, 3]
+)
+INFO:root:
+
+Going from 45 to 46 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_6
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[208, 17],
+  pos=[208, 3],
+  norm=[208, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1248],
+  edge_attr=[1248, 3]
+)
+INFO:root:
+
+Going from 46 to 47 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_7
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[208, 17],
+  pos=[208, 3],
+  norm=[208, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1248],
+  edge_attr=[1248, 3]
+)
+INFO:root:
+
+Going from 47 to 48 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_8
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[208, 17],
+  pos=[208, 3],
+  norm=[208, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1248],
+  edge_attr=[1248, 3]
+)
+INFO:root:
+
+Going from 48 to 49 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/9/img_9
+INFO:root:Running a simulation to model object: 9_4
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:9_4 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Updating existing graph for 9_4
+INFO:root:building graph
+INFO:root:Extended graph 9_4 with new points. New model:
+Data(
+  x=[208, 17],
+  pos=[208, 3],
+  norm=[208, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1248],
+  edge_attr=[1248, 3]
+)
+INFO:root:
+
+Going from 49 to 50 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_0
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 1_5
+INFO:root:built graph Data(
+  x=[60, 17],
+  pos=[60, 3],
+  norm=[60, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 360],
+  edge_attr=[360, 3]
+)
+INFO:root:Added new graph with id 1_5 to memory.
+INFO:root:
+
+Going from 50 to 51 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_1
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[99, 17],
+  pos=[99, 3],
+  norm=[99, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 594],
+  edge_attr=[594, 3]
+)
+INFO:root:
+
+Going from 51 to 52 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_2
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[101, 17],
+  pos=[101, 3],
+  norm=[101, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 606],
+  edge_attr=[606, 3]
+)
+INFO:root:
+
+Going from 52 to 53 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_3
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[104, 17],
+  pos=[104, 3],
+  norm=[104, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 624],
+  edge_attr=[624, 3]
+)
+INFO:root:
+
+Going from 53 to 54 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_4
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[116, 17],
+  pos=[116, 3],
+  norm=[116, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 696],
+  edge_attr=[696, 3]
+)
+INFO:root:
+
+Going from 54 to 55 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_5
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[118, 17],
+  pos=[118, 3],
+  norm=[118, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 708],
+  edge_attr=[708, 3]
+)
+INFO:root:
+
+Going from 55 to 56 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_6
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[119, 17],
+  pos=[119, 3],
+  norm=[119, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 714],
+  edge_attr=[714, 3]
+)
+INFO:root:
+
+Going from 56 to 57 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_7
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[119, 17],
+  pos=[119, 3],
+  norm=[119, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 714],
+  edge_attr=[714, 3]
+)
+INFO:root:
+
+Going from 57 to 58 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_8
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[119, 17],
+  pos=[119, 3],
+  norm=[119, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 714],
+  edge_attr=[714, 3]
+)
+INFO:root:
+
+Going from 58 to 59 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/1/img_9
+INFO:root:Running a simulation to model object: 1_5
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:1_5 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Updating existing graph for 1_5
+INFO:root:building graph
+INFO:root:Extended graph 1_5 with new points. New model:
+Data(
+  x=[119, 17],
+  pos=[119, 3],
+  norm=[119, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 714],
+  edge_attr=[714, 3]
+)
+INFO:root:
+
+Going from 59 to 60 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_0
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 6_6
+INFO:root:built graph Data(
+  x=[99, 17],
+  pos=[99, 3],
+  norm=[99, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 594],
+  edge_attr=[594, 3]
+)
+INFO:root:Added new graph with id 6_6 to memory.
+INFO:root:
+
+Going from 60 to 61 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_1
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
 Data(
   x=[156, 17],
   pos=[156, 3],
@@ -1118,19 +1612,19 @@ Data(
 )
 INFO:root:
 
-Going from 42 to 43 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_3
-INFO:root:Running a simulation to model object: 8_8
+Going from 61 to 62 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_2
+INFO:root:Running a simulation to model object: 6_6
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
-INFO:root:Updating existing graph for 8_8
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
-INFO:root:Extended graph 8_8 with new points. New model:
+INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[216, 17],
-  pos=[216, 3],
-  norm=[216, 3],
+  x=[171, 17],
+  pos=[171, 3],
+  norm=[171, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1139,24 +1633,24 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1296],
-  edge_attr=[1296, 3]
+  edge_index=[2, 1026],
+  edge_attr=[1026, 3]
 )
 INFO:root:
 
-Going from 43 to 44 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_4
-INFO:root:Running a simulation to model object: 8_8
+Going from 62 to 63 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_3
+INFO:root:Running a simulation to model object: 6_6
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
-INFO:root:Updating existing graph for 8_8
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
-INFO:root:Extended graph 8_8 with new points. New model:
+INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[217, 17],
-  pos=[217, 3],
-  norm=[217, 3],
+  x=[190, 17],
+  pos=[190, 3],
+  norm=[190, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1165,23 +1659,179 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1302],
-  edge_attr=[1302, 3]
+  edge_index=[2, 1140],
+  edge_attr=[1140, 3]
 )
 INFO:root:
 
-Going from 44 to 45 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_0
-INFO:root:Running a simulation to model object: 2_9
+Going from 63 to 64 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_4
+INFO:root:Running a simulation to model object: 6_6
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:2_9 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[221, 17],
+  pos=[221, 3],
+  norm=[221, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1326],
+  edge_attr=[1326, 3]
+)
+INFO:root:
+
+Going from 64 to 65 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_5
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[239, 17],
+  pos=[239, 3],
+  norm=[239, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1434],
+  edge_attr=[1434, 3]
+)
+INFO:root:
+
+Going from 65 to 66 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_6
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[251, 17],
+  pos=[251, 3],
+  norm=[251, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1506],
+  edge_attr=[1506, 3]
+)
+INFO:root:
+
+Going from 66 to 67 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_7
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[252, 17],
+  pos=[252, 3],
+  norm=[252, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1512],
+  edge_attr=[1512, 3]
+)
+INFO:root:
+
+Going from 67 to 68 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_8
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[252, 17],
+  pos=[252, 3],
+  norm=[252, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1512],
+  edge_attr=[1512, 3]
+)
+INFO:root:
+
+Going from 68 to 69 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/6/img_9
+INFO:root:Running a simulation to model object: 6_6
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:6_6 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
+INFO:root:Updating existing graph for 6_6
+INFO:root:building graph
+INFO:root:Extended graph 6_6 with new points. New model:
+Data(
+  x=[252, 17],
+  pos=[252, 3],
+  norm=[252, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1512],
+  edge_attr=[1512, 3]
+)
+INFO:root:
+
+Going from 69 to 70 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_0
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
 INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id 2_9
+INFO:root:init object model with id 5_7
 INFO:root:built graph Data(
-  x=[130, 17],
-  pos=[130, 3],
-  norm=[130, 3],
+  x=[100, 17],
+  pos=[100, 3],
+  norm=[100, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1190,25 +1840,25 @@ INFO:root:built graph Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 780],
-  edge_attr=[780, 3]
+  edge_index=[2, 600],
+  edge_attr=[600, 3]
 )
-INFO:root:Added new graph with id 2_9 to memory.
+INFO:root:Added new graph with id 5_7 to memory.
 INFO:root:
 
-Going from 45 to 46 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_1
-INFO:root:Running a simulation to model object: 2_9
+Going from 70 to 71 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_1
+INFO:root:Running a simulation to model object: 5_7
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
-INFO:root:Updating existing graph for 2_9
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
-INFO:root:Extended graph 2_9 with new points. New model:
+INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[139, 17],
-  pos=[139, 3],
-  norm=[139, 3],
+  x=[187, 17],
+  pos=[187, 3],
+  norm=[187, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1217,21 +1867,228 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 834],
-  edge_attr=[834, 3]
+  edge_index=[2, 1122],
+  edge_attr=[1122, 3]
 )
 INFO:root:
 
-Going from 46 to 47 of 50
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_2
-INFO:root:Running a simulation to model object: 2_9
+Going from 71 to 72 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_2
+INFO:root:Running a simulation to model object: 5_7
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
-INFO:root:Updating existing graph for 2_9
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
-INFO:root:Extended graph 2_9 with new points. New model:
+INFO:root:Extended graph 5_7 with new points. New model:
 Data(
+  x=[202, 17],
+  pos=[202, 3],
+  norm=[202, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1212],
+  edge_attr=[1212, 3]
+)
+INFO:root:
+
+Going from 72 to 73 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_3
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[246, 17],
+  pos=[246, 3],
+  norm=[246, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1476],
+  edge_attr=[1476, 3]
+)
+INFO:root:
+
+Going from 73 to 74 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_4
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[259, 17],
+  pos=[259, 3],
+  norm=[259, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1554],
+  edge_attr=[1554, 3]
+)
+INFO:root:
+
+Going from 74 to 75 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_5
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[270, 17],
+  pos=[270, 3],
+  norm=[270, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1620],
+  edge_attr=[1620, 3]
+)
+INFO:root:
+
+Going from 75 to 76 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_6
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[270, 17],
+  pos=[270, 3],
+  norm=[270, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1620],
+  edge_attr=[1620, 3]
+)
+INFO:root:
+
+Going from 76 to 77 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_7
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[270, 17],
+  pos=[270, 3],
+  norm=[270, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1620],
+  edge_attr=[1620, 3]
+)
+INFO:root:
+
+Going from 77 to 78 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_8
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[273, 17],
+  pos=[273, 3],
+  norm=[273, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1638],
+  edge_attr=[1638, 3]
+)
+INFO:root:
+
+Going from 78 to 79 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/5/img_9
+INFO:root:Running a simulation to model object: 5_7
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:5_7 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Updating existing graph for 5_7
+INFO:root:building graph
+INFO:root:Extended graph 5_7 with new points. New model:
+Data(
+  x=[273, 17],
+  pos=[273, 3],
+  norm=[273, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1638],
+  edge_attr=[1638, 3]
+)
+INFO:root:
+
+Going from 79 to 80 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_0
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 8_8
+INFO:root:built graph Data(
   x=[145, 17],
   pos=[145, 3],
   norm=[145, 3],
@@ -1246,9 +2103,322 @@ Data(
   edge_index=[2, 870],
   edge_attr=[870, 3]
 )
+INFO:root:Added new graph with id 8_8 to memory.
 INFO:root:
 
-Going from 47 to 48 of 50
+Going from 80 to 81 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_1
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[166, 17],
+  pos=[166, 3],
+  norm=[166, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 996],
+  edge_attr=[996, 3]
+)
+INFO:root:
+
+Going from 81 to 82 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_2
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[173, 17],
+  pos=[173, 3],
+  norm=[173, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1038],
+  edge_attr=[1038, 3]
+)
+INFO:root:
+
+Going from 82 to 83 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_3
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[243, 17],
+  pos=[243, 3],
+  norm=[243, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1458],
+  edge_attr=[1458, 3]
+)
+INFO:root:
+
+Going from 83 to 84 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_4
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[244, 17],
+  pos=[244, 3],
+  norm=[244, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1464],
+  edge_attr=[1464, 3]
+)
+INFO:root:
+
+Going from 84 to 85 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_5
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[250, 17],
+  pos=[250, 3],
+  norm=[250, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1500],
+  edge_attr=[1500, 3]
+)
+INFO:root:
+
+Going from 85 to 86 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_6
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[252, 17],
+  pos=[252, 3],
+  norm=[252, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1512],
+  edge_attr=[1512, 3]
+)
+INFO:root:
+
+Going from 86 to 87 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_7
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[253, 17],
+  pos=[253, 3],
+  norm=[253, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1518],
+  edge_attr=[1518, 3]
+)
+INFO:root:
+
+Going from 87 to 88 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_8
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[262, 17],
+  pos=[262, 3],
+  norm=[262, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1572],
+  edge_attr=[1572, 3]
+)
+INFO:root:
+
+Going from 88 to 89 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/8/img_9
+INFO:root:Running a simulation to model object: 8_8
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:8_8 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Updating existing graph for 8_8
+INFO:root:building graph
+INFO:root:Extended graph 8_8 with new points. New model:
+Data(
+  x=[263, 17],
+  pos=[263, 3],
+  norm=[263, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1578],
+  edge_attr=[1578, 3]
+)
+INFO:root:
+
+Going from 89 to 90 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_0
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id 2_9
+INFO:root:built graph Data(
+  x=[154, 17],
+  pos=[154, 3],
+  norm=[154, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 924],
+  edge_attr=[924, 3]
+)
+INFO:root:Added new graph with id 2_9 to memory.
+INFO:root:
+
+Going from 90 to 91 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_1
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[159, 17],
+  pos=[159, 3],
+  norm=[159, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 954],
+  edge_attr=[954, 3]
+)
+INFO:root:
+
+Going from 91 to 92 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_2
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[165, 17],
+  pos=[165, 3],
+  norm=[165, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 990],
+  edge_attr=[990, 3]
+)
+INFO:root:
+
+Going from 92 to 93 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_3
 INFO:root:Running a simulation to model object: 2_9
 INFO:root:
@@ -1258,9 +2428,9 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[170, 17],
-  pos=[170, 3],
-  norm=[170, 3],
+  x=[197, 17],
+  pos=[197, 3],
+  norm=[197, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1269,12 +2439,12 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1020],
-  edge_attr=[1020, 3]
+  edge_index=[2, 1182],
+  edge_attr=[1182, 3]
 )
 INFO:root:
 
-Going from 48 to 49 of 50
+Going from 93 to 94 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_4
 INFO:root:Running a simulation to model object: 2_9
 INFO:root:
@@ -1284,9 +2454,9 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[185, 17],
-  pos=[185, 3],
-  norm=[185, 3],
+  x=[212, 17],
+  pos=[212, 3],
+  norm=[212, 3],
   feature_mapping={
     node_ids=[2],
     pose_vectors=[2],
@@ -1295,11 +2465,141 @@ Data(
     rgba=[2],
     principal_curvatures_log=[2]
   },
-  edge_index=[2, 1110],
-  edge_attr=[1110, 3]
+  edge_index=[2, 1272],
+  edge_attr=[1272, 3]
 )
 INFO:root:
 
-Going from 49 to 0 of 50
+Going from 94 to 95 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_5
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[215, 17],
+  pos=[215, 3],
+  norm=[215, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1290],
+  edge_attr=[1290, 3]
+)
+INFO:root:
+
+Going from 95 to 96 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_6
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[219, 17],
+  pos=[219, 3],
+  norm=[219, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1314],
+  edge_attr=[1314, 3]
+)
+INFO:root:
+
+Going from 96 to 97 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_7
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[241, 17],
+  pos=[241, 3],
+  norm=[241, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1446],
+  edge_attr=[1446, 3]
+)
+INFO:root:
+
+Going from 97 to 98 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_8
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[241, 17],
+  pos=[241, 3],
+  norm=[241, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1446],
+  edge_attr=[1446, 3]
+)
+INFO:root:
+
+Going from 98 to 99 of 100
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/2/img_9
+INFO:root:Running a simulation to model object: 2_9
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:2_9 already in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '5_7', '8_8', '2_9'])
+INFO:root:Updating existing graph for 2_9
+INFO:root:building graph
+INFO:root:Extended graph 2_9 with new points. New model:
+Data(
+  x=[259, 17],
+  pos=[259, 3],
+  norm=[259, 3],
+  feature_mapping={
+    node_ids=[2],
+    pose_vectors=[2],
+    pose_fully_defined=[2],
+    on_object=[2],
+    rgba=[2],
+    principal_curvatures_log=[2]
+  },
+  edge_index=[2, 1554],
+  edge_attr=[1554, 3]
+)
+INFO:root:
+
+Going from 99 to 0 of 100
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:saving model to mnist/log/mnist_training/pretrained

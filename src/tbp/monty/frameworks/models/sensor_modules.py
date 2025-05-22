@@ -382,7 +382,7 @@ class DetailedLoggingSM(SensorModuleBase):
         rgba_patch  = patch_dict["rgba"]
         depth_patch = patch_dict["depth"]
         sem_mask    = (patch_dict["semantic_3d"][:, 3].reshape(gray_patch.shape) > 0)
-        
+                
         features, morph_feats, invalid = self.extract_and_add_features(
                 features,
                 gray_patch,
@@ -399,9 +399,11 @@ class DetailedLoggingSM(SensorModuleBase):
         # ── 중앙 픽셀의 3D 좌표(x,y,z=0) ─────────────────────────
         obs_center = sem_3d[center_flat_idx]        # [x, y, z, semantic_id]
         x, y, z = obs_center[:3]                    # z는 0
+        
         semantic_id = obs_center[3]
         #print(semantic_id)
         # on_object 플래그
+        
         morph_feats["on_object"] = float(semantic_id > 0)
         
         #print(x,y,z)
@@ -415,8 +417,8 @@ class DetailedLoggingSM(SensorModuleBase):
             sender_id=self.sensor_module_id,
             sender_type="SM",
         )
-        
-        #print(morph_feats)
+        #print(observed_state.use_state)
+        #print(observed_state)        
         return observed_state
 
 

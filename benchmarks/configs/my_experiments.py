@@ -215,7 +215,7 @@ mnist_training = dict(
 	dataset_args=MnistDatasetArgs(),
 	train_dataloader_class=ED.MnistDataLoader,
 	#train_dataloader_args=MnistDataloaderArgs(),
-    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=5)
+    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=10)
 )
 
 mnist_inference = dict(
@@ -264,7 +264,7 @@ mnist_inference = dict(
     dataset_args=MnistDatasetArgs(),
     eval_dataloader_class=ED.MnistDataLoader,
     #eval_dataloader_args=MnistEvalDataloaderArgs(),
-    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=10)
+    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=60)
 )
 
 
