@@ -53,7 +53,7 @@ ax.set_box_aspect([1, 0.1, 1])       # 큐브 비율
 points = model.pos              # (N, 3)
 v1 = model.pose_vectors_flat[:, :3]   # (N, 3) 주곡률 방향 1
 v2 = model.pose_vectors_flat[:, 3:]   # (N, 3) 주곡률 방향 2
-print("Cosine similarity:", np.sum(v1 * v2, axis=1))  
+
 # 3) 시각화
 fig = plt.figure(figsize=(6,6))
 ax = fig.add_subplot(111, projection='3d')

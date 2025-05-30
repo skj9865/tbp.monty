@@ -15,6 +15,7 @@ import numpy as np
 from benchmarks.configs.names import MyExperiments
 from tbp.monty.frameworks.config_utils.config_args import (
 	LoggingConfig,
+    MotorSystemConfigInformedNoTrans,
 	MotorSystemConfigInformedNoTransStepS1,
     MotorSystemConfigInformedNoTransStepS3,
     MotorSystemConfig,
@@ -207,7 +208,8 @@ mnist_training = dict(
 
 	monty_config=PatchAndViewMontyConfig(
     	# Take 1 step at a time, following the drawing path of the letter
-    	#motor_system_config=MotorSystemConfigInformedNoTransStepS1(),
+    	#motor_system_config=MotorSystemConfigInformedNoTrans(),
+        #motor_system_config=MotorSystemConfigInformedNoTransStepS1(),
         motor_system_config=MotorSystemConfigNaiveScanSpiral(),
         #motor_system_config = MotorSystemConfigSurface(),
     	sensor_module_configs=mnist_sensor_module_config,
@@ -238,6 +240,7 @@ mnist_inference = dict(
         ),
 
     monty_config=PatchAndViewMontyConfig(
+        #motor_system_config = MotorSystemConfigInformedNoTrans(),
         #motor_system_config = MotorSystemConfigInformedNoTransStepS3(),
         motor_system_config=MotorSystemConfigNaiveScanSpiral(),
         monty_class=MontyForEvidenceGraphMatching,
@@ -245,7 +248,7 @@ mnist_inference = dict(
             learning_module_0=dict( 
                 learning_module_class=EvidenceGraphLM,
                 learning_module_args=dict(               
-                    max_match_distance=2,
+                    max_match_distance=0.3,
                     tolerances={
                         "patch": {
                             "principal_curvatures_log": np.ones(2),
