@@ -208,7 +208,7 @@ class DetailedLoggingSM(SensorModuleBase):
             # Flag that PC directions are non-meaningful for e.g. downstream motor
             # policies
             features["pose_fully_defined"] = False
-        print(self.features)
+        
         invalid_signals = (not valid_pn) or (not valid_pc)
         if invalid_signals:
             logging.debug("Either the point-normal or pc-directions were ill-defined")
@@ -293,19 +293,23 @@ class DetailedLoggingSM(SensorModuleBase):
         k1, k2, v1, v2, valid_pc = self.get_hessian_eigens(gray_patch, center_flat_idx)
 
         pose_fully_defined = abs(k1 - k2) > self.pc1_is_pc2_threshold
-        normal = np.array([0.0,0.0,1.0])
+        normal = np.array([0.0,1.0,0.0])
    
+        v1_xyz = np.array([v1[0], 0.0, v1[1]]) 
+        v2_xyz = np.array([v2[0], 0.0, v2[1]]) 
         morphological_features = {
             "pose_vectors": np.vstack([
                 #np.append(grad_vec, 0.0),     # z=0 padding
                 normal,
-                np.append(v1, 0.0),
-                np.append(v2, 0.0),
+                v1_xyz,
+                v2_xyz,
             ]),
             #"pose_fully_defined": pose_fully_defined,
             "pose_fully_defined": bool(abs(k1-k2) > self.pc1_is_pc2_threshold)
         }
-        
+
+        features["pose_vectors_flat"] = np.hstack([v1_xyz, v2_xyz]) # for debugging
+
         #morphological_features["pose_fully_defined"] = bool(pose_fully_defined)
         #if "principal_curvatures" in self.features :
         #    features["principal_curvatures"] = np.array([k1,k2])
@@ -418,11 +422,12 @@ class DetailedLoggingSM(SensorModuleBase):
             sender_type="SM",
         )
         #print(observed_state.use_state)
-        #print(observed_state)        
+        #print(observed_state)   
+        #      
         return observed_state
 
 
-    def BU_observations_to_comunication_protocol(self, data, on_object_only=True):
+    def BUobservations_to_comunication_protocol(self, data, on_object_only=True):
         """Turn raw observations into instance of State class following CMP.
 
         Args:
@@ -459,11 +464,25 @@ class DetailedLoggingSM(SensorModuleBase):
         if obs_3d[center_id][3] or (
             not on_object_only and features["object_coverage"] > 0
         ):            
+            # (
+            #     features,
+            #     morphological_features,
+            #     invalid_signals,
+            # ) = self.extract_and_add_features(
+            #     features,
+            #     obs_3d,
+            #     rgba_feat,
+            #     depth_feat,
+            #     center_id,
+            #     center_row_col,
+            #     sensor_frame_data,
+            #     world_camera,
+            # )
             (
                 features,
                 morphological_features,
                 invalid_signals,
-            ) = self.extract_and_add_features(
+            ) = self.BU_extract_and_add_features( # by skj
                 features,
                 obs_3d,
                 rgba_feat,
@@ -515,6 +534,7 @@ class DetailedLoggingSM(SensorModuleBase):
             else:
                 self.visited_normals.append(None)
 
+        #print(observed_state) # skj
         return observed_state
 
     def _get_point_normals(self, obs_3d, sensor_frame_data, center_id, world_camera):

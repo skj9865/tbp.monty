@@ -235,15 +235,15 @@ class BasicGraphMatchingLogger(BaseMontyLogger):
             stats = self.overall_eval_stats
 
         lm_performances = []
+        
         for lm in self.lms:
             # This accumulates stats from all LM
             episode_stats = self.data["BASIC"][f"{mode}_stats"][episode][lm]
             performance = episode_stats["primary_performance"]
-
+            
             if performance is not None:  # in pre training performance is None
                 stats[f"num_{performance}_per_lm"] += 1
-                lm_performances.append(performance)
-                
+                lm_performances.append(performance)                
 
             stats["rotation_errors"].append(episode_stats["rotation_error"])
             stats["run_times"].append(episode_stats["time"])
@@ -265,7 +265,6 @@ class BasicGraphMatchingLogger(BaseMontyLogger):
                 if episode_stats["goal_states_attempted"]
                 else 0  # Handles division by 0
             )
-
         stats["episode_lm_performances"].append(lm_performances)
         
         for p in self.performance_options:            
@@ -275,13 +274,13 @@ class BasicGraphMatchingLogger(BaseMontyLogger):
                 # performance. That makes it possible for some lms to have no match
                 # but still have an overall performance of correct (or other).
                 episode_performance = p
-     
+        
         if 'episode_performance' in locals(): # by skj
             pass
         else:
             episode_performance = "no_match"            
-
-        for p in self.performance_options:
+        
+        for p in self.performance_options:            
             stats[f"episode_{p}"] = int(p == episode_performance)
             stats[f"num_{p}"] += int(p == episode_performance)
 

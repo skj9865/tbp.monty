@@ -16,6 +16,7 @@ from benchmarks.configs.names import MyExperiments
 from tbp.monty.frameworks.config_utils.config_args import (
 	LoggingConfig,
 	MotorSystemConfigInformedNoTransStepS1,
+    MotorSystemConfigInformedNoTransStepS3,
     MotorSystemConfig,
     MotorSystemConfigNaiveScanSpiral,
     MotorSystemConfigSurface,
@@ -137,7 +138,7 @@ omniglot_inference = dict(
                     # Point normal always points up, so they are not useful
                     feature_weights={
                         "patch": {
-                            "pose_vectors": [0, 1, 0],
+                            "pose_vectors": [0, 0, 1],
                         }
                     },
                     # We assume the letter is presented upright
@@ -225,6 +226,9 @@ mnist_inference = dict(
         model_name_or_path = "mnist/log/mnist_training/pretrained",
         do_train=False,
         n_eval_epochs=1,  
+        #max_train_steps=100,
+        #max_eval_steps=100,
+        max_total_steps=1000,
     ),
     #logging_config=LoggingConfig(),
     logging_config=CSVLoggingConfig(
@@ -234,13 +238,14 @@ mnist_inference = dict(
         ),
 
     monty_config=PatchAndViewMontyConfig(
+        #motor_system_config = MotorSystemConfigInformedNoTransStepS3(),
+        motor_system_config=MotorSystemConfigNaiveScanSpiral(),
         monty_class=MontyForEvidenceGraphMatching,
         learning_module_configs=dict(
             learning_module_0=dict( 
                 learning_module_class=EvidenceGraphLM,
-                learning_module_args=dict(
-                    # xyz values are in larger range so need to increase mmd
-                    max_match_distance=5,
+                learning_module_args=dict(               
+                    max_match_distance=2,
                     tolerances={
                         "patch": {
                             "principal_curvatures_log": np.ones(2),
@@ -250,7 +255,7 @@ mnist_inference = dict(
                     # Point normal always points up, so they are not useful
                     feature_weights={
                         "patch": {
-                            "pose_vectors": [0, 0, 1],
+                            "pose_vectors": [0, 1, 0],
                         }
                     },
                     # We assume the letter is presented upright
@@ -264,7 +269,7 @@ mnist_inference = dict(
     dataset_args=MnistDatasetArgs(),
     eval_dataloader_class=ED.MnistDataLoader,
     #eval_dataloader_args=MnistEvalDataloaderArgs(),
-    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=60)
+    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=10)
 )
 
 

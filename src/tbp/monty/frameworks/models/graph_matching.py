@@ -1262,7 +1262,7 @@ class GraphMemory(LMMemory):
         """Return models stored in memory."""
         return self.models_in_memory.copy()
 
-    def get_initial_hypotheses(self):
+    def get_initial_hypotheses(self):        
         # At the first steps all objects and locations are possible so it returns all.
         # The object and pose hypotheses are then narrowed down by the LM.
         possible_matches = self.get_all_models_in_memory()  # TODO: just List[bool]

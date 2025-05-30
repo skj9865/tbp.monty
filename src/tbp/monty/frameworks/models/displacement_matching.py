@@ -210,7 +210,7 @@ class DisplacementGraphLM(GraphLM):
             query = self.buffer.get_current_ppf(input_channel="first")
         else:
             logging.error("match_attribute not defined")
-
+        
         # This is just whether we are on the object or not here.
         target = self._select_features_to_use(observation)
 
@@ -459,7 +459,7 @@ class DisplacementGraphMemory(GraphMemory):
     # =============== Public Interface Functions ===============
 
     # ------------------- Main Algorithm -----------------------
-    def get_initial_hypotheses(self):
+    def get_initial_hypotheses(self):        
         possible_matches = self.get_all_models_in_memory()
         possible_paths = {}
         next_possible_paths = {}  # Need this for scale factors to work

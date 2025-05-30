@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D  # noqa: F401
 from load_object_model import load_object_model   # 함수가 있는 모듈
 import argparse
+import numpy as np
 # ------------------------------------------------------------
 parser = argparse.ArgumentParser()
 
@@ -18,7 +19,7 @@ model = load_object_model(
     model_name="model.pt",   # 서브폴더 이름 = 실험명
     object_name=object_name,         # 그래프에 저장된 key (예: "digit_6")
     #0_0, 1_5, 2_9, 3_3, 4_1 , 5_7, 6_6, 7_2, 8_8, and 9_4
-    features=("rgba",),            # 색상까지 함께 읽기
+    features=("rgba","pose_vectors_flat"),            # 색상까지 함께 읽기
     checkpoint=None,               # 마지막 model.pt
     lm_id=0,
 )
@@ -45,6 +46,28 @@ ax.scatter(model.x, model.y, model.z,
 #     ax.scatter(model.x, model.y, model.z, s=5, color="royalblue")
 
 ax.set_xlabel("x"); ax.set_ylabel("y"); ax.set_zlabel("z")
-ax.set_box_aspect([1, 1, 0.1])       # 큐브 비율
-plt.show()
+ax.set_box_aspect([1, 0.1, 1])       # 큐브 비율
+# plt.show()
 
+# 2) 위치와 주곡률 방향 벡터
+points = model.pos              # (N, 3)
+v1 = model.pose_vectors_flat[:, :3]   # (N, 3) 주곡률 방향 1
+v2 = model.pose_vectors_flat[:, 3:]   # (N, 3) 주곡률 방향 2
+print("Cosine similarity:", np.sum(v1 * v2, axis=1))  
+# 3) 시각화
+fig = plt.figure(figsize=(6,6))
+ax = fig.add_subplot(111, projection='3d')
+
+# 3-a) 노드 위치 점 찍기
+ax.scatter(points[:, 0], points[:, 1], points[:, 2],
+           color='gray', s=5, alpha=0.5)
+
+# 3-b) 주곡률 방향 벡터 그리기
+scale = 1.0
+ax.quiver(points[:, 0], points[:, 1], points[:, 2],
+          v1[:, 0], v1[:, 1], v1[:, 2],
+          length=scale, color='blue', normalize=True)
+
+ax.set_box_aspect([1, 1, 1])  # 평면 객체라면 z 축 축소
+plt.tight_layout()
+plt.show()

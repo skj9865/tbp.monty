@@ -40,9 +40,8 @@ class ExperimentArgs:
     do_eval: bool = True
     show_sensor_output: bool = False
     max_train_steps: int = 1000
-    max_eval_steps: int = 500
-    max_total_steps : int = 500 # by skj
-    #max_total_steps: int = 4 * (max_train_steps + max_eval_steps)  # Total number of
+    max_eval_steps: int = 500    
+    max_total_steps: int = 4 * (max_train_steps + max_eval_steps)  # Total number of
     # episode steps that can be taken before timing out, regardless of e.g. whether LMs
     # receive sensory information and therefore perform a true matching step (due to
     # e.g. being off the object)
@@ -113,7 +112,7 @@ class EnvInitArgsMontyWorldMultiObjectScenes:
 
 @dataclass
 class OmniglotDatasetArgs:
-    env_init_func: Callable = field(default=OmniglotEnvironment)
+    env_init_func: Callable = field(default=OmniglotEnvironment)    
     env_init_args: Dict = field(default_factory=lambda: {})
     transform: Union[Callable, list, None] = None
 

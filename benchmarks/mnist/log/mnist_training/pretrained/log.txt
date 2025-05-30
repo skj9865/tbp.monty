@@ -1,4 +1,4 @@
-INFO:root:Logger initialized at 2025-05-22 11:17:03.988056
+INFO:root:Logger initialized at 2025-05-30 13:57:14.762008
 INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:Running a simulation to model object: 0_0
 WARNING:root:Output file mnist/log/mnist_training/pretrained/train_stats.csv already exists. This file will be moved to mnist/log/mnist_training/pretrained/train_stats_old.csv
@@ -9,7 +9,7 @@ INFO:root:0_0 not in memory ([])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 0_0
 INFO:root:built graph Data(
-  x=[159, 17],
+  x=[159, 23],
   pos=[159, 3],
   norm=[159, 3],
   feature_mapping={
@@ -17,6 +17,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -36,7 +37,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[179, 17],
+  x=[179, 23],
   pos=[179, 3],
   norm=[179, 3],
   feature_mapping={
@@ -44,6 +45,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -62,7 +64,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[202, 17],
+  x=[202, 23],
   pos=[202, 3],
   norm=[202, 3],
   feature_mapping={
@@ -70,6 +72,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -88,7 +91,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[227, 17],
+  x=[227, 23],
   pos=[227, 3],
   norm=[227, 3],
   feature_mapping={
@@ -96,6 +99,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -114,7 +118,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[239, 17],
+  x=[239, 23],
   pos=[239, 3],
   norm=[239, 3],
   feature_mapping={
@@ -122,6 +126,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -140,7 +145,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[240, 17],
+  x=[240, 23],
   pos=[240, 3],
   norm=[240, 3],
   feature_mapping={
@@ -148,6 +153,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -166,7 +172,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[243, 17],
+  x=[243, 23],
   pos=[243, 3],
   norm=[243, 3],
   feature_mapping={
@@ -174,6 +180,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -192,7 +199,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[251, 17],
+  x=[251, 23],
   pos=[251, 3],
   norm=[251, 3],
   feature_mapping={
@@ -200,6 +207,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -218,7 +226,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[253, 17],
+  x=[253, 23],
   pos=[253, 3],
   norm=[253, 3],
   feature_mapping={
@@ -226,6 +234,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -244,7 +253,7 @@ INFO:root:Updating existing graph for 0_0
 INFO:root:building graph
 INFO:root:Extended graph 0_0 with new points. New model:
 Data(
-  x=[254, 17],
+  x=[254, 23],
   pos=[254, 3],
   norm=[254, 3],
   feature_mapping={
@@ -252,6 +261,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -269,7 +279,7 @@ INFO:root:4_1 not in memory (['0_0'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 4_1
 INFO:root:built graph Data(
-  x=[59, 17],
+  x=[59, 23],
   pos=[59, 3],
   norm=[59, 3],
   feature_mapping={
@@ -277,6 +287,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -296,7 +307,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[149, 17],
+  x=[149, 23],
   pos=[149, 3],
   norm=[149, 3],
   feature_mapping={
@@ -304,6 +315,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -322,7 +334,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[177, 17],
+  x=[177, 23],
   pos=[177, 3],
   norm=[177, 3],
   feature_mapping={
@@ -330,6 +342,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -348,7 +361,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[203, 17],
+  x=[203, 23],
   pos=[203, 3],
   norm=[203, 3],
   feature_mapping={
@@ -356,6 +369,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -374,7 +388,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[226, 17],
+  x=[226, 23],
   pos=[226, 3],
   norm=[226, 3],
   feature_mapping={
@@ -382,6 +396,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -400,7 +415,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[231, 17],
+  x=[231, 23],
   pos=[231, 3],
   norm=[231, 3],
   feature_mapping={
@@ -408,6 +423,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -426,7 +442,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[233, 17],
+  x=[233, 23],
   pos=[233, 3],
   norm=[233, 3],
   feature_mapping={
@@ -434,6 +450,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -452,7 +469,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[235, 17],
+  x=[235, 23],
   pos=[235, 3],
   norm=[235, 3],
   feature_mapping={
@@ -460,6 +477,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -478,7 +496,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[235, 17],
+  x=[235, 23],
   pos=[235, 3],
   norm=[235, 3],
   feature_mapping={
@@ -486,6 +504,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -504,7 +523,7 @@ INFO:root:Updating existing graph for 4_1
 INFO:root:building graph
 INFO:root:Extended graph 4_1 with new points. New model:
 Data(
-  x=[241, 17],
+  x=[241, 23],
   pos=[241, 3],
   norm=[241, 3],
   feature_mapping={
@@ -512,6 +531,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -529,7 +549,7 @@ INFO:root:7_2 not in memory (['0_0', '4_1'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 7_2
 INFO:root:built graph Data(
-  x=[63, 17],
+  x=[63, 23],
   pos=[63, 3],
   norm=[63, 3],
   feature_mapping={
@@ -537,6 +557,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -556,7 +577,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[81, 17],
+  x=[81, 23],
   pos=[81, 3],
   norm=[81, 3],
   feature_mapping={
@@ -564,6 +585,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -582,7 +604,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[122, 17],
+  x=[122, 23],
   pos=[122, 3],
   norm=[122, 3],
   feature_mapping={
@@ -590,6 +612,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -608,7 +631,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[125, 17],
+  x=[125, 23],
   pos=[125, 3],
   norm=[125, 3],
   feature_mapping={
@@ -616,6 +639,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -634,7 +658,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[140, 17],
+  x=[140, 23],
   pos=[140, 3],
   norm=[140, 3],
   feature_mapping={
@@ -642,6 +666,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -660,7 +685,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[144, 17],
+  x=[144, 23],
   pos=[144, 3],
   norm=[144, 3],
   feature_mapping={
@@ -668,6 +693,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -686,7 +712,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[164, 17],
+  x=[164, 23],
   pos=[164, 3],
   norm=[164, 3],
   feature_mapping={
@@ -694,6 +720,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -712,7 +739,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[176, 17],
+  x=[176, 23],
   pos=[176, 3],
   norm=[176, 3],
   feature_mapping={
@@ -720,6 +747,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -738,7 +766,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[176, 17],
+  x=[176, 23],
   pos=[176, 3],
   norm=[176, 3],
   feature_mapping={
@@ -746,6 +774,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -764,7 +793,7 @@ INFO:root:Updating existing graph for 7_2
 INFO:root:building graph
 INFO:root:Extended graph 7_2 with new points. New model:
 Data(
-  x=[188, 17],
+  x=[188, 23],
   pos=[188, 3],
   norm=[188, 3],
   feature_mapping={
@@ -772,6 +801,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -789,7 +819,7 @@ INFO:root:3_3 not in memory (['0_0', '4_1', '7_2'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 3_3
 INFO:root:built graph Data(
-  x=[82, 17],
+  x=[82, 23],
   pos=[82, 3],
   norm=[82, 3],
   feature_mapping={
@@ -797,6 +827,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -816,7 +847,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[164, 17],
+  x=[164, 23],
   pos=[164, 3],
   norm=[164, 3],
   feature_mapping={
@@ -824,6 +855,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -842,7 +874,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[204, 17],
+  x=[204, 23],
   pos=[204, 3],
   norm=[204, 3],
   feature_mapping={
@@ -850,6 +882,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -868,7 +901,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[222, 17],
+  x=[222, 23],
   pos=[222, 3],
   norm=[222, 3],
   feature_mapping={
@@ -876,6 +909,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -894,7 +928,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[228, 17],
+  x=[228, 23],
   pos=[228, 3],
   norm=[228, 3],
   feature_mapping={
@@ -902,6 +936,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -920,7 +955,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[229, 17],
+  x=[229, 23],
   pos=[229, 3],
   norm=[229, 3],
   feature_mapping={
@@ -928,6 +963,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -946,7 +982,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[237, 17],
+  x=[237, 23],
   pos=[237, 3],
   norm=[237, 3],
   feature_mapping={
@@ -954,6 +990,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -972,7 +1009,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[238, 17],
+  x=[238, 23],
   pos=[238, 3],
   norm=[238, 3],
   feature_mapping={
@@ -980,6 +1017,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -998,7 +1036,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[239, 17],
+  x=[239, 23],
   pos=[239, 3],
   norm=[239, 3],
   feature_mapping={
@@ -1006,6 +1044,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1024,7 +1063,7 @@ INFO:root:Updating existing graph for 3_3
 INFO:root:building graph
 INFO:root:Extended graph 3_3 with new points. New model:
 Data(
-  x=[239, 17],
+  x=[239, 23],
   pos=[239, 3],
   norm=[239, 3],
   feature_mapping={
@@ -1032,6 +1071,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1049,7 +1089,7 @@ INFO:root:9_4 not in memory (['0_0', '4_1', '7_2', '3_3'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 9_4
 INFO:root:built graph Data(
-  x=[99, 17],
+  x=[99, 23],
   pos=[99, 3],
   norm=[99, 3],
   feature_mapping={
@@ -1057,6 +1097,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1076,7 +1117,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[113, 17],
+  x=[113, 23],
   pos=[113, 3],
   norm=[113, 3],
   feature_mapping={
@@ -1084,6 +1125,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1102,7 +1144,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[143, 17],
+  x=[143, 23],
   pos=[143, 3],
   norm=[143, 3],
   feature_mapping={
@@ -1110,6 +1152,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1128,7 +1171,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[174, 17],
+  x=[174, 23],
   pos=[174, 3],
   norm=[174, 3],
   feature_mapping={
@@ -1136,6 +1179,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1154,7 +1198,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[176, 17],
+  x=[176, 23],
   pos=[176, 3],
   norm=[176, 3],
   feature_mapping={
@@ -1162,6 +1206,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1180,7 +1225,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[187, 17],
+  x=[187, 23],
   pos=[187, 3],
   norm=[187, 3],
   feature_mapping={
@@ -1188,6 +1233,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1206,7 +1252,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[208, 17],
+  x=[208, 23],
   pos=[208, 3],
   norm=[208, 3],
   feature_mapping={
@@ -1214,6 +1260,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1232,7 +1279,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[208, 17],
+  x=[208, 23],
   pos=[208, 3],
   norm=[208, 3],
   feature_mapping={
@@ -1240,6 +1287,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1258,7 +1306,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[208, 17],
+  x=[208, 23],
   pos=[208, 3],
   norm=[208, 3],
   feature_mapping={
@@ -1266,6 +1314,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1284,7 +1333,7 @@ INFO:root:Updating existing graph for 9_4
 INFO:root:building graph
 INFO:root:Extended graph 9_4 with new points. New model:
 Data(
-  x=[208, 17],
+  x=[208, 23],
   pos=[208, 3],
   norm=[208, 3],
   feature_mapping={
@@ -1292,6 +1341,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1309,7 +1359,7 @@ INFO:root:1_5 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 1_5
 INFO:root:built graph Data(
-  x=[60, 17],
+  x=[60, 23],
   pos=[60, 3],
   norm=[60, 3],
   feature_mapping={
@@ -1317,6 +1367,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1336,7 +1387,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[99, 17],
+  x=[99, 23],
   pos=[99, 3],
   norm=[99, 3],
   feature_mapping={
@@ -1344,6 +1395,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1362,7 +1414,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[101, 17],
+  x=[101, 23],
   pos=[101, 3],
   norm=[101, 3],
   feature_mapping={
@@ -1370,6 +1422,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1388,7 +1441,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[104, 17],
+  x=[104, 23],
   pos=[104, 3],
   norm=[104, 3],
   feature_mapping={
@@ -1396,6 +1449,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1414,7 +1468,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[116, 17],
+  x=[116, 23],
   pos=[116, 3],
   norm=[116, 3],
   feature_mapping={
@@ -1422,6 +1476,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1440,7 +1495,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[118, 17],
+  x=[118, 23],
   pos=[118, 3],
   norm=[118, 3],
   feature_mapping={
@@ -1448,6 +1503,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1466,7 +1522,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[119, 17],
+  x=[119, 23],
   pos=[119, 3],
   norm=[119, 3],
   feature_mapping={
@@ -1474,6 +1530,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1492,7 +1549,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[119, 17],
+  x=[119, 23],
   pos=[119, 3],
   norm=[119, 3],
   feature_mapping={
@@ -1500,6 +1557,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1518,7 +1576,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[119, 17],
+  x=[119, 23],
   pos=[119, 3],
   norm=[119, 3],
   feature_mapping={
@@ -1526,6 +1584,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1544,7 +1603,7 @@ INFO:root:Updating existing graph for 1_5
 INFO:root:building graph
 INFO:root:Extended graph 1_5 with new points. New model:
 Data(
-  x=[119, 17],
+  x=[119, 23],
   pos=[119, 3],
   norm=[119, 3],
   feature_mapping={
@@ -1552,6 +1611,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1569,7 +1629,7 @@ INFO:root:6_6 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 6_6
 INFO:root:built graph Data(
-  x=[99, 17],
+  x=[99, 23],
   pos=[99, 3],
   norm=[99, 3],
   feature_mapping={
@@ -1577,6 +1637,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1596,7 +1657,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[156, 17],
+  x=[156, 23],
   pos=[156, 3],
   norm=[156, 3],
   feature_mapping={
@@ -1604,6 +1665,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1622,7 +1684,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[171, 17],
+  x=[171, 23],
   pos=[171, 3],
   norm=[171, 3],
   feature_mapping={
@@ -1630,6 +1692,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1648,7 +1711,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[190, 17],
+  x=[190, 23],
   pos=[190, 3],
   norm=[190, 3],
   feature_mapping={
@@ -1656,6 +1719,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1674,7 +1738,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[221, 17],
+  x=[221, 23],
   pos=[221, 3],
   norm=[221, 3],
   feature_mapping={
@@ -1682,6 +1746,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1700,7 +1765,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[239, 17],
+  x=[239, 23],
   pos=[239, 3],
   norm=[239, 3],
   feature_mapping={
@@ -1708,6 +1773,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1726,7 +1792,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[251, 17],
+  x=[251, 23],
   pos=[251, 3],
   norm=[251, 3],
   feature_mapping={
@@ -1734,6 +1800,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1752,7 +1819,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[252, 17],
+  x=[252, 23],
   pos=[252, 3],
   norm=[252, 3],
   feature_mapping={
@@ -1760,6 +1827,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1778,7 +1846,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[252, 17],
+  x=[252, 23],
   pos=[252, 3],
   norm=[252, 3],
   feature_mapping={
@@ -1786,6 +1854,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1804,7 +1873,7 @@ INFO:root:Updating existing graph for 6_6
 INFO:root:building graph
 INFO:root:Extended graph 6_6 with new points. New model:
 Data(
-  x=[252, 17],
+  x=[252, 23],
   pos=[252, 3],
   norm=[252, 3],
   feature_mapping={
@@ -1812,6 +1881,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1829,7 +1899,7 @@ INFO:root:5_7 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6'])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 5_7
 INFO:root:built graph Data(
-  x=[100, 17],
+  x=[100, 23],
   pos=[100, 3],
   norm=[100, 3],
   feature_mapping={
@@ -1837,6 +1907,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1856,7 +1927,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[187, 17],
+  x=[187, 23],
   pos=[187, 3],
   norm=[187, 3],
   feature_mapping={
@@ -1864,6 +1935,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1882,7 +1954,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[202, 17],
+  x=[202, 23],
   pos=[202, 3],
   norm=[202, 3],
   feature_mapping={
@@ -1890,6 +1962,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1908,7 +1981,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[246, 17],
+  x=[246, 23],
   pos=[246, 3],
   norm=[246, 3],
   feature_mapping={
@@ -1916,6 +1989,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1934,7 +2008,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[259, 17],
+  x=[259, 23],
   pos=[259, 3],
   norm=[259, 3],
   feature_mapping={
@@ -1942,6 +2016,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1960,7 +2035,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[270, 17],
+  x=[270, 23],
   pos=[270, 3],
   norm=[270, 3],
   feature_mapping={
@@ -1968,6 +2043,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -1986,7 +2062,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[270, 17],
+  x=[270, 23],
   pos=[270, 3],
   norm=[270, 3],
   feature_mapping={
@@ -1994,6 +2070,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2012,7 +2089,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[270, 17],
+  x=[270, 23],
   pos=[270, 3],
   norm=[270, 3],
   feature_mapping={
@@ -2020,6 +2097,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2038,7 +2116,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[273, 17],
+  x=[273, 23],
   pos=[273, 3],
   norm=[273, 3],
   feature_mapping={
@@ -2046,6 +2124,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2064,7 +2143,7 @@ INFO:root:Updating existing graph for 5_7
 INFO:root:building graph
 INFO:root:Extended graph 5_7 with new points. New model:
 Data(
-  x=[273, 17],
+  x=[273, 23],
   pos=[273, 3],
   norm=[273, 3],
   feature_mapping={
@@ -2072,6 +2151,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2089,7 +2169,7 @@ INFO:root:8_8 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 8_8
 INFO:root:built graph Data(
-  x=[145, 17],
+  x=[145, 23],
   pos=[145, 3],
   norm=[145, 3],
   feature_mapping={
@@ -2097,6 +2177,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2116,7 +2197,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[166, 17],
+  x=[166, 23],
   pos=[166, 3],
   norm=[166, 3],
   feature_mapping={
@@ -2124,6 +2205,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2142,7 +2224,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[173, 17],
+  x=[173, 23],
   pos=[173, 3],
   norm=[173, 3],
   feature_mapping={
@@ -2150,6 +2232,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2168,7 +2251,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[243, 17],
+  x=[243, 23],
   pos=[243, 3],
   norm=[243, 3],
   feature_mapping={
@@ -2176,6 +2259,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2194,7 +2278,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[244, 17],
+  x=[244, 23],
   pos=[244, 3],
   norm=[244, 3],
   feature_mapping={
@@ -2202,6 +2286,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2220,7 +2305,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[250, 17],
+  x=[250, 23],
   pos=[250, 3],
   norm=[250, 3],
   feature_mapping={
@@ -2228,6 +2313,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2246,7 +2332,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[252, 17],
+  x=[252, 23],
   pos=[252, 3],
   norm=[252, 3],
   feature_mapping={
@@ -2254,6 +2340,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2272,7 +2359,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[253, 17],
+  x=[253, 23],
   pos=[253, 3],
   norm=[253, 3],
   feature_mapping={
@@ -2280,6 +2367,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2298,7 +2386,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[262, 17],
+  x=[262, 23],
   pos=[262, 3],
   norm=[262, 3],
   feature_mapping={
@@ -2306,6 +2394,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2324,7 +2413,7 @@ INFO:root:Updating existing graph for 8_8
 INFO:root:building graph
 INFO:root:Extended graph 8_8 with new points. New model:
 Data(
-  x=[263, 17],
+  x=[263, 23],
   pos=[263, 3],
   norm=[263, 3],
   feature_mapping={
@@ -2332,6 +2421,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2349,7 +2439,7 @@ INFO:root:2_9 not in memory (['0_0', '4_1', '7_2', '3_3', '9_4', '1_5', '6_6', '
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id 2_9
 INFO:root:built graph Data(
-  x=[154, 17],
+  x=[154, 23],
   pos=[154, 3],
   norm=[154, 3],
   feature_mapping={
@@ -2357,6 +2447,7 @@ INFO:root:built graph Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2376,7 +2467,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[159, 17],
+  x=[159, 23],
   pos=[159, 3],
   norm=[159, 3],
   feature_mapping={
@@ -2384,6 +2475,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2402,7 +2494,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[165, 17],
+  x=[165, 23],
   pos=[165, 3],
   norm=[165, 3],
   feature_mapping={
@@ -2410,6 +2502,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2428,7 +2521,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[197, 17],
+  x=[197, 23],
   pos=[197, 3],
   norm=[197, 3],
   feature_mapping={
@@ -2436,6 +2529,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2454,7 +2548,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[212, 17],
+  x=[212, 23],
   pos=[212, 3],
   norm=[212, 3],
   feature_mapping={
@@ -2462,6 +2556,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2480,7 +2575,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[215, 17],
+  x=[215, 23],
   pos=[215, 3],
   norm=[215, 3],
   feature_mapping={
@@ -2488,6 +2583,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2506,7 +2602,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[219, 17],
+  x=[219, 23],
   pos=[219, 3],
   norm=[219, 3],
   feature_mapping={
@@ -2514,6 +2610,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2532,7 +2629,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[241, 17],
+  x=[241, 23],
   pos=[241, 3],
   norm=[241, 3],
   feature_mapping={
@@ -2540,6 +2637,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2558,7 +2656,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[241, 17],
+  x=[241, 23],
   pos=[241, 3],
   norm=[241, 3],
   feature_mapping={
@@ -2566,6 +2664,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },
@@ -2584,7 +2683,7 @@ INFO:root:Updating existing graph for 2_9
 INFO:root:building graph
 INFO:root:Extended graph 2_9 with new points. New model:
 Data(
-  x=[259, 17],
+  x=[259, 23],
   pos=[259, 3],
   norm=[259, 3],
   feature_mapping={
@@ -2592,6 +2691,7 @@ Data(
     pose_vectors=[2],
     pose_fully_defined=[2],
     on_object=[2],
+    pose_vectors_flat=[2],
     rgba=[2],
     principal_curvatures_log=[2]
   },

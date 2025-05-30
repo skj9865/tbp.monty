@@ -493,7 +493,7 @@ class DepthTo3DLocations:
             
             observations[self.agent_id][sensor_id]["semantic_3d"] = semantic_3d          
             
-
+        
         return observations
 
     def clip(self, depth_patch: np.ndarray, semantic_patch: np.ndarray) -> None:

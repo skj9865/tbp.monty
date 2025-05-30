@@ -163,8 +163,7 @@ class EmbodiedDataTest(unittest.TestCase):
         )
 
         for i in range(1, DATASET_LEN):
-            obs_dist, _ = dataset_dist[motor_system_dist()]
-            print(obs_dist)
+            obs_dist, _ = dataset_dist[motor_system_dist()]            
             self.assertTrue(
                 np.all(obs_dist[AGENT_ID][SENSOR_ID]["sensor"] == EXPECTED_STATES[i])
             )

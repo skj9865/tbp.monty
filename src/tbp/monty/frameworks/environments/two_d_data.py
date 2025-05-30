@@ -144,6 +144,7 @@ class OmniglotEnvironment(EmbodiedEnvironment):
                 },
             }
         }
+        
         return obs
 
     def get_state(self):
@@ -373,6 +374,7 @@ class SaccadeOnImageEnvironment(EmbodiedEnvironment):
                 },
             }
         }
+        
         return obs
 
     def get_state(self):
@@ -928,14 +930,14 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         left = self.current_loc[1] - self.patch_size // 2
 
         yy, xx = np.mgrid[0:h, 0:w]        # 0‥h-1, 0‥w-1
-        yy = yy + top                      # 행(row) → 전역 y
-        xx = xx + left                     # 열(col) → 전역 x
+        yy = yy + top                      # 행(row) → 전역 y        
+        xx = xx + left                     # 열(col) → 전역 x        
 
-        zz = np.zeros_like(xx, dtype=np.float32)
+        zz = np.zeros_like(xx, dtype=np.float32)        
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
         sem_id = (patch > 100).astype(np.float32)
-        semantic_3d = np.stack([xx, yy, zz, sem_id], axis=-1) \
+        semantic_3d = np.stack([xx, zz, yy, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
         
@@ -947,8 +949,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         sensor_frame_data = semantic_3d.copy()
 
         # ── 4) 깊이 맵 : 0.5(전경) / 1.0(배경) ───────────────────────
-        depth = np.where(patch > 0, 0.5, 1.0).astype(np.float32)
-
+        depth = np.where(patch > 100, 0.2, 1.0).astype(np.float32)
+        #print(depth)
         # ── 5) world_camera : 단순 평면이므로 단위 행렬 ───────────────
         world_camera = np.eye(4, dtype=np.float32)
         #print(self.current_loc)

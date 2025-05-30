@@ -763,7 +763,7 @@ class EvidenceGraphLM(GraphLM):
             return ["patch_off_object"], [0]
         graph_evidences = []
         for graph_id in graph_ids:
-            graph_evidences.append(np.max(self.evidence[graph_id]))
+            graph_evidences.append(np.max(self.evidence[graph_id]))            
         return graph_ids, np.array(graph_evidences)
 
     def get_all_evidences(self):
@@ -788,7 +788,7 @@ class EvidenceGraphLM(GraphLM):
     # ======================= Private ==========================
 
     # ------------------- Main Algorithm -----------------------
-    def _get_initial_hypothesis_space(self, features, graph_id, input_channel):
+    def _get_initial_hypothesis_space(self, features, graph_id, input_channel):          
         if self.initial_possible_poses is None:
             # Get initial poses for all locations informed by pose features
             (
@@ -871,7 +871,8 @@ class EvidenceGraphLM(GraphLM):
 
     def _update_possible_matches(self, query):
         """Update evidence for each hypothesis instead of removing them."""
-        thread_list = []
+        thread_list = []        
+        
         for graph_id in self.get_all_known_object_ids():
             if self.use_multithreading:
                 # assign separate thread on same CPU to each objects update.
@@ -946,7 +947,7 @@ class EvidenceGraphLM(GraphLM):
             initial_possible_locations = []
             initial_possible_rotations = []
             initial_evidence = []
-            channel_mapper = ChannelMapper()
+            channel_mapper = ChannelMapper()            
             for input_channel in input_channels_to_use:
                 (
                     initial_possible_channel_locations,
@@ -964,7 +965,7 @@ class EvidenceGraphLM(GraphLM):
             )
             self.possible_poses[graph_id] = np.concatenate(
                 initial_possible_rotations, axis=0
-            )
+            )            
             self.evidence[graph_id] = (
                 np.concatenate(initial_evidence, axis=0) * self.present_weight
             )
@@ -975,7 +976,7 @@ class EvidenceGraphLM(GraphLM):
             assert (
                 self.evidence[graph_id].shape[0]
                 == self.possible_locations[graph_id].shape[0]
-            )
+            )            
         # ---------------------------------------------------------------------------
         # Use displacement and new sensed features to update evidence for hypotheses.
         else:
@@ -998,8 +999,7 @@ class EvidenceGraphLM(GraphLM):
                         channel_evidence,
                     ) = self._get_initial_hypothesis_space(
                         features, graph_id, input_channel
-                    )
-
+                    )                                    
                     self._add_hypotheses_to_hpspace(
                         graph_id=graph_id,
                         input_channel=input_channel,
@@ -1008,9 +1008,9 @@ class EvidenceGraphLM(GraphLM):
                         new_evidence=channel_evidence,
                     )
 
-                else:
+                else:                    
                     # Get the observed displacement for this channel
-                    displacement = displacements[input_channel]
+                    displacement = displacements[input_channel]                    
                     # Get the IDs range in hypothesis space for this channel
                     channel_start, channel_end = channel_mapper.channel_range(
                         input_channel
@@ -1024,6 +1024,7 @@ class EvidenceGraphLM(GraphLM):
                         self.possible_locations[graph_id][channel_start:channel_end]
                         + rotated_displacements
                     )
+                    
                     # Threshold hypotheses that we update by evidence for them
                     current_evidence_update_threshold = (
                         self._get_evidence_update_threshold(graph_id)
@@ -1051,6 +1052,7 @@ class EvidenceGraphLM(GraphLM):
                             features,
                             hyp_ids_to_test,
                         )
+                        
                         min_update = np.clip(np.min(new_evidence), 0, np.inf)
                         # Alternatives (no update to other Hs or adding avg) left in
                         # here in case we want to revert back to those.
@@ -1063,6 +1065,7 @@ class EvidenceGraphLM(GraphLM):
                             * min_update
                         )
                         evidence_to_add[hyp_ids_to_test] = new_evidence
+                        
                         # If past and present weight add up to 1, equivalent to
                         # np.average and evidence will be bound to [-1, 2]. Otherwise it
                         # keeps growing.
@@ -1182,12 +1185,14 @@ class EvidenceGraphLM(GraphLM):
             search_locations,
             num_neighbors=self.max_nneighbors,
         )
+        
         if self.max_nneighbors == 1:
             nearest_node_ids = np.expand_dims(nearest_node_ids, axis=1)
 
         nearest_node_locs = self.graph_memory.get_locations_in_graph(
             graph_id, input_channel
         )[nearest_node_ids]
+        
         max_abs_curvature = get_relevant_curvature(features[input_channel])
         custom_nearest_node_dists = get_custom_distances(
             nearest_node_locs,
@@ -1382,7 +1387,7 @@ class EvidenceGraphLM(GraphLM):
             )
             circ_range = 1
             start_idx = end_idx
-
+        
         feature_differences = np.zeros_like(feature_array[input_channel])
         feature_differences[:, ~circular_var] = np.abs(
             feature_array[input_channel][:, ~circular_var] - feature_list[~circular_var]

@@ -679,7 +679,7 @@ class FeatureGraphMemory(GraphMemory):
     # ------------------- Main Algorithm -----------------------
 
     # ------------------ Getters & Setters ---------------------
-    def get_initial_hypotheses(self):
+    def get_initial_hypotheses(self):        
         possible_matches = self.get_all_models_in_memory()
         possible_paths = {}
         possible_poses = {}
