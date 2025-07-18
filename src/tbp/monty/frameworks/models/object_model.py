@@ -396,7 +396,7 @@ class GridObjectModel(GraphObjectModel):
     ):
         
         #location_rel_model = [0.09642857, 0, 0.04821429] # by skj
-        #object_location_rel_body = [0.09642857, 0, 0.05357143] # by skj
+        #object_location_rel_body = [0.09642857, 0, 0.05357143] # by skj        
         #print(object_location_rel_body) # by skj
         
         """Add new locations and features into grids and rebuild graph."""

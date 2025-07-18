@@ -1,7 +1,139 @@
-INFO:root:Logger initialized at 2025-06-12 09:31:32.714528
+INFO:root:Logger initialized at 2025-06-12 09:36:18.707284
 WARNING:root:You are setting the monty logging level to DETAILED, but all yourhandlers are BASIC. Consider setting the level to BASIC, or adding aDETAILED handler
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
-INFO:root:Running a simulation to model object: 7_2
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
 INFO:root:Skipping step on learning module 0
 INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
@@ -32,11 +164,11 @@ INFO:root:
 INFO:root:new_object0 not in memory ([])
 INFO:root:Adding a new graph to memory.
 INFO:root:init object model with id new_object0
-INFO:root:building graph from 428 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a6786776a0>
+INFO:root:building graph from 1554 observations
+INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x7b14b4915ca0>
 INFO:root:Added new graph with id new_object0 to memory.
 INFO:root:Model for new_object0:
-   Contains 84 points in graph.
+   Contains 176 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -49,30 +181,381 @@ INFO:root:Model for new_object0:
 INFO:root:
 
 Going from 0 to 1 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_0
-INFO:root:Running a simulation to model object: 3_3
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_1
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
 INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
 INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:Testing 168 out of 168 hypotheses for new_object0 (evidence > 0.0)
-INFO:root:current most likely hypothesis: new_object0 with evidence -1.0
-INFO:root:Setting terminal state of learning_module_0 to no_match
-INFO:root:Possible matches for LM 0: set()
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 2 ---
-INFO:root:Going into exploratory mode after 2 steps
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.4456355052436206)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.06662222196109946)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.36
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.4538822322505097)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.78
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.9469024022349293)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.08
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07545959 0.         0.06927373]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -1.4186224857651286)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.43
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:all possible locations are in radius 0.1 of [0.06670499 0.         0.07404927]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -1.152333276584427)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.58
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:all possible locations are in radius 0.1 of [0.05361619 0.         0.08694569]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.8602441531753343)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.02
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:all possible locations are in radius 0.1 of [0.05202103 0.         0.0836704 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.4180479752481979)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.45
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:all possible locations are in radius 0.1 of [0.05483022 0.         0.08365062]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -0.8314394036223817)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.93
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:all possible locations are in radius 0.1 of [0.05978376 0.         0.08728582]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -1.2977903221883134)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.43
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:all possible locations are in radius 0.1 of [0.06005553 0.         0.09142073]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -1.7906185945551538)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.88
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:all possible locations are in radius 0.1 of [0.06287271 0.         0.09195011]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.2567075441019093)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.3
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04513051 0.         0.11288857]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.1196831875784903)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.47
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04433674 0.         0.13430051]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.2887846396032514)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.97
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:all possible locations are in radius 0.1 of [0.0441383  0.         0.13965349]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.632154297231698)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.09
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04393986 0.         0.14500647]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.176124416338373)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.43
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04653265 0.         0.13818031]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 352 out of 352 hypotheses for new_object0 (evidence > -2.673156595414503)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.7
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04240886 0.         0.13611535]
+INFO:root:added symmetry evidence
+INFO:root:Symmetry detected for hypotheses [197 203 205 288]
+INFO:root:Setting terminal state of learning_module_0 to match
+INFO:root:learning_module_0: Detected new_object0 at location [0.031 0.    0.145], rotation [180.   0. 180.], and scale 1.0
+INFO:root:learning_module_0 recognized object new_object0
+INFO:root:
+
+MONTY DETECTED MATCH
+
+
+INFO:root:Going into exploratory mode after 19 steps
 INFO:root:Terminated due to maximum episode steps : 6000
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:new_object1 not in memory (['new_object0'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id new_object1
-INFO:root:building graph from 1813 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a5a97a06a0>
-INFO:root:Added new graph with id new_object1 to memory.
-INFO:root:Model for new_object1:
-   Contains 113 points in graph.
+INFO:root:new_object0 already in memory (['new_object0'])
+INFO:root:Updating existing graph for new_object0
+INFO:root:adding 1704 observations
+INFO:root:Extended graph new_object0 with new points. New model:
+{'patch': Model for new_object0:
+   Contains 299 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -81,14 +564,146 @@ INFO:root:Model for new_object1:
            pose_vectors_flat - 11:17,
            rgba - 17:20,
            principal_curvatures_log - 20:22,
-
+}
 INFO:root:
 
 Going from 1 to 0 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:saving model to mnist/log/mnist_unsuper/0
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
-INFO:root:Running a simulation to model object: 7_2
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
 INFO:root:Skipping step on learning module 0
 INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
@@ -106,27 +721,287 @@ INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
 INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
-INFO:root:Possible matches for LM 0: {'new_object1', 'new_object0'}
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 1 ---
-INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:Testing 168 out of 168 hypotheses for new_object0 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object1 (evidence > 0.0)
-INFO:root:current most likely hypothesis: new_object0 with evidence -1.0
-INFO:root:Setting terminal state of learning_module_0 to no_match
-INFO:root:Possible matches for LM 0: set()
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 2 ---
-INFO:root:Going into exploratory mode after 2 steps
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -0.4999998302749459)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.95
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -0.9999983310383947)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.26
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -1.4999502777314588)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.66
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -1.9999502325167655)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.88
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08883432 0.         0.07546169]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -2.4998810395970494)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.3
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07236365 0.         0.10253361]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -2.9998112975827063)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.23
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:all possible locations are in radius 0.1 of [0.0529914 0.        0.0798667]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -3.4997178590951656)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.25
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07266337 0.         0.04289111]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -3.9996472907500804)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.57
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09384783 0.         0.01776337]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -4.49959203108763)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.97
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08893508 0.         0.01562703]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -4.999529328859724)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08402235 0.         0.01349069]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -5.499494829629127)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.94
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:all possible locations are in radius 0.1 of [0.06928412 0.         0.00708166]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -5.99946525080729)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.63
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07749668 0.         0.03532585]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -6.499437842034947)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.98
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07862375 0.         0.02592289]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -6.999414305920427)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.09
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.0765593   0.         -0.00553004]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -7.499386215782645)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.54
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.07336651  0.         -0.01449999]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -7.999353989200938)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.08
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08203104 0.         0.0165292 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -8.499353918962848)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.1
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08551341 0.         0.03528033]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 20 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -8.999336409005169)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 20 ---
+INFO:root:all possible locations are in radius 0.1 of [0.07575858 0.         0.05751999]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -9.49931845500307)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.75
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 21 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09312608 0.         0.01085199]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -9.999297015632933)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.13
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 22 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09641935 0.         0.01507732]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -10.4992682143259)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.63
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 23 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09971261 0.         0.01930265]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -10.999265849486111)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.02
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 24 ---
+INFO:root:all possible locations are in radius 0.1 of [0.10300587 0.         0.02352798]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -11.499265093951799)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.48
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 25 ---
+INFO:root:all possible locations are in radius 0.1 of [0.10629913 0.         0.0277533 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 598 out of 598 hypotheses for new_object0 (evidence > -11.999212718010812)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.87
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 26 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1020738  0.         0.03104656]
+INFO:root:added symmetry evidence
+INFO:root:Symmetry detected for hypotheses [465]
+INFO:root:Setting terminal state of learning_module_0 to match
+INFO:root:learning_module_0: Detected new_object0 at location [0.102 0.    0.031], rotation [180.   0. 180.], and scale 1.0
+INFO:root:learning_module_0 recognized object new_object0
+INFO:root:
+
+MONTY DETECTED MATCH
+
+
+INFO:root:Going into exploratory mode after 26 steps
 INFO:root:Terminated due to maximum episode steps : 6000
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:new_object2 not in memory (['new_object0', 'new_object1'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id new_object2
-INFO:root:building graph from 428 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a5b312ca60>
-INFO:root:Added new graph with id new_object2 to memory.
-INFO:root:Model for new_object2:
-   Contains 84 points in graph.
+INFO:root:new_object0 already in memory (['new_object0'])
+INFO:root:Updating existing graph for new_object0
+INFO:root:adding 1554 observations
+INFO:root:Extended graph new_object0 with new points. New model:
+{'patch': Model for new_object0:
+   Contains 306 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -135,36 +1010,580 @@ INFO:root:Model for new_object2:
            pose_vectors_flat - 11:17,
            rgba - 17:20,
            principal_curvatures_log - 20:22,
-
+}
 INFO:root:
 
 Going from 0 to 1 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_0
-INFO:root:Running a simulation to model object: 3_3
-INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
-INFO:root:Possible matches for LM 0: {'new_object2', 'new_object1', 'new_object0'}
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_1
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:Testing 168 out of 168 hypotheses for new_object0 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object1 (evidence > 0.0)
-INFO:root:Testing 168 out of 168 hypotheses for new_object2 (evidence > 0.0)
-INFO:root:current most likely hypothesis: new_object0 with evidence -1.0
-INFO:root:Setting terminal state of learning_module_0 to no_match
-INFO:root:Possible matches for LM 0: set()
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 2 ---
-INFO:root:Going into exploratory mode after 2 steps
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -0.49999999638519554)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -0.9999999927738734)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.37
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1207635  0.         0.03898905]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -1.4999999926897467)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.77
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11876172 0.         0.00174225]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -1.9999999920253955)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.11
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:all possible locations are in radius 0.1 of [0.15016378 0.         0.020297  ]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -2.4999999913328224)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.81
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09715159 0.         0.02424564]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -2.9999999879354)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.93
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11804525  0.         -0.00019495]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -3.4999999843247767)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.38
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:all possible locations are in radius 0.1 of [0.10595867 0.         0.00260681]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -3.9999999806994717)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.79
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:all possible locations are in radius 0.1 of [0.10063812 0.         0.00318004]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -4.499999977069873)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.24
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09004248 0.         0.00447625]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -4.999999973440893)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.7
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.08990056  0.         -0.00124931]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -5.499999969810697)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.02
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.08379193  0.         -0.00419245]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -5.999999966189014)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.36
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.09080149  0.         -0.01126518]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -6.499999966097545)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.55
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1058146  0.        -0.0134253]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -6.999999962590223)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.10956788  0.         -0.01396533]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -7.499999962568294)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.38
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11683912  0.         -0.02115703]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -7.999999962465159)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.78
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11820266  0.         -0.0178184 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -8.499999962248157)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.24
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:all possible locations are in radius 0.1 of [0.12386544 0.         0.00237379]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -8.999999961902041)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.7
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 20 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1232339  0.         0.00747751]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -9.499999961310962)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.28
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 21 ---
+INFO:root:all possible locations are in radius 0.1 of [0.12260235 0.         0.01258122]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -9.999999958706454)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.92
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 22 ---
+INFO:root:all possible locations are in radius 0.1 of [0.12197081 0.         0.01768494]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -10.499999956491797)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.4
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 23 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1528783  0.         0.00357512]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -10.999999955220154)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.07
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 24 ---
+INFO:root:all possible locations are in radius 0.1 of [0.15373613 0.         0.00886314]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -11.499999954083103)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.76
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 25 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.148842    0.         -0.01759247]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -11.999999952975386)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.97
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 26 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1554518  0.         0.01943917]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -12.499999949956198)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.03
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 27 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.15505355  0.         -0.01249599]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -12.999999946519045)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.07
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 28 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.15250531  0.         -0.00939021]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -13.49999994649961)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.9
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1551382   0.         -0.01224312]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -13.999999945363657)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.03
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 30 ---
+INFO:root:all possible locations are in radius 0.1 of [0.13466762 0.         0.01235021]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -14.499999942176856)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.68
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 31 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.15552127  0.         -0.00153569]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -14.999999941845763)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.41
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 32 ---
+INFO:root:all possible locations are in radius 0.1 of [0.15571281 0.         0.00381802]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -15.499999941701182)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.04
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 33 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09230119 0.         0.01978039]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -15.999999941695911)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.27
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 34 ---
+INFO:root:all possible locations are in radius 0.1 of [0.09436113 0.         0.01918746]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 35 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 35 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 35 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -16.499999938073337)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.34
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 35 ---
+INFO:root:all possible locations are in radius 0.1 of [0.08890696 0.         0.00583293]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -16.999999937714854)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 36 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04696881 0.         0.00603473]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -17.499999934296195)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.31
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 37 ---
+INFO:root:all possible locations are in radius 0.1 of [0.04908973 0.         0.00111531]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -17.999999930703325)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.8
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 38 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.05121066  0.         -0.00380411]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -18.49999992708455)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.28
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 39 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.05333158  0.         -0.00872353]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -18.99999992348523)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.78
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 40 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.0554525   0.         -0.01364295]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 612 out of 612 hypotheses for new_object0 (evidence > -19.499999919900525)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.19
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 41 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.06037191  0.         -0.01152203]
+INFO:root:added symmetry evidence
+INFO:root:Symmetry detected for hypotheses [230]
+INFO:root:Setting terminal state of learning_module_0 to match
+INFO:root:learning_module_0: Detected new_object0 at location [ 0.06   0.    -0.012], rotation [180.   0. 180.], and scale 1.0
+INFO:root:learning_module_0 recognized object new_object0
+INFO:root:
+
+MONTY DETECTED MATCH
+
+
+INFO:root:Going into exploratory mode after 41 steps
 INFO:root:Terminated due to maximum episode steps : 6000
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:new_object3 not in memory (['new_object0', 'new_object1', 'new_object2'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id new_object3
-INFO:root:building graph from 1813 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a5b00e5be0>
-INFO:root:Added new graph with id new_object3 to memory.
-INFO:root:Model for new_object3:
-   Contains 113 points in graph.
+INFO:root:new_object0 already in memory (['new_object0'])
+INFO:root:Updating existing graph for new_object0
+INFO:root:adding 1704 observations
+INFO:root:Extended graph new_object0 with new points. New model:
+{'patch': Model for new_object0:
+   Contains 414 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -173,14 +1592,146 @@ INFO:root:Model for new_object3:
            pose_vectors_flat - 11:17,
            rgba - 17:20,
            principal_curvatures_log - 20:22,
-
+}
 INFO:root:
 
 Going from 1 to 0 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:saving model to mnist/log/mnist_unsuper/1
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
-INFO:root:Running a simulation to model object: 7_2
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
 INFO:root:Skipping step on learning module 0
 INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
@@ -198,29 +1749,224 @@ INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
 INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
-INFO:root:Possible matches for LM 0: {'new_object2', 'new_object1', 'new_object3', 'new_object0'}
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 1 ---
-INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:Testing 168 out of 168 hypotheses for new_object0 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object1 (evidence > 0.0)
-INFO:root:Testing 168 out of 168 hypotheses for new_object2 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object3 (evidence > 0.0)
-INFO:root:current most likely hypothesis: new_object0 with evidence -1.0
-INFO:root:Setting terminal state of learning_module_0 to no_match
-INFO:root:Possible matches for LM 0: set()
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 2 ---
-INFO:root:Going into exploratory mode after 2 steps
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -0.4999999993791586)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.9
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -0.9999999978365053)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.36
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -1.4999999969018574)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.8
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:all possible locations are in radius 0.1 of [0.13271866 0.         0.00569946]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -1.999999995634186)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.87
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11667747 0.         0.04678503]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -2.4999999929770564)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.96
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11726191 0.         0.04186131]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -2.999999990460752)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.06
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1463348   0.         -0.00813353]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -3.499999988763868)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.34
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.14419846  0.         -0.00322079]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -3.9999999871480894)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.67
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:all possible locations are in radius 0.1 of [0.14206211 0.         0.00169195]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -4.499999985690342)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.06
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.13714937  0.         -0.0004444 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -4.999999984464154)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.09
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1161474  0.         0.00074172]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -5.499999981599394)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.49
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11749841  0.         -0.00898977]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -5.999999980029484)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11258567  0.         -0.01112611]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -6.499999978777123)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.67
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.10767293  0.         -0.01326246]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -6.9999999779644035)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.10276019  0.         -0.0153988 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -7.499999976619464)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.47
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11495993  0.         -0.0182848 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 828 out of 828 hypotheses for new_object0 (evidence > -7.999999974515304)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.81
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11725494  0.         -0.01836008]
+INFO:root:added symmetry evidence
+INFO:root:Symmetry detected for hypotheses [386 810]
+INFO:root:Setting terminal state of learning_module_0 to match
+INFO:root:learning_module_0: Detected new_object0 at location [ 0.1    0.    -0.022], rotation [180.   0. 180.], and scale 1.0
+INFO:root:learning_module_0 recognized object new_object0
+INFO:root:
+
+MONTY DETECTED MATCH
+
+
+INFO:root:Going into exploratory mode after 18 steps
 INFO:root:Terminated due to maximum episode steps : 6000
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:new_object4 not in memory (['new_object0', 'new_object1', 'new_object2', 'new_object3'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id new_object4
-INFO:root:building graph from 428 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a5b512d700>
-INFO:root:Added new graph with id new_object4 to memory.
-INFO:root:Model for new_object4:
-   Contains 84 points in graph.
+INFO:root:new_object0 already in memory (['new_object0'])
+INFO:root:Updating existing graph for new_object0
+INFO:root:adding 1554 observations
+INFO:root:Extended graph new_object0 with new points. New model:
+{'patch': Model for new_object0:
+   Contains 425 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -229,38 +1975,440 @@ INFO:root:Model for new_object4:
            pose_vectors_flat - 11:17,
            rgba - 17:20,
            principal_curvatures_log - 20:22,
-
+}
 INFO:root:
 
 Going from 0 to 1 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/3/img_0
-INFO:root:Running a simulation to model object: 3_3
-INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
-INFO:root:Possible matches for LM 0: {'new_object4', 'new_object1', 'new_object0', 'new_object3', 'new_object2'}
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_1
+INFO:root:Running a simulation to model object: 0_0
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
 INFO:root:--- Global Matching Step 1 ---
 INFO:root:Sending input from ['patch'] to learning_module_0
-INFO:root:Testing 168 out of 168 hypotheses for new_object0 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object1 (evidence > 0.0)
-INFO:root:Testing 168 out of 168 hypotheses for new_object2 (evidence > 0.0)
-INFO:root:Testing 226 out of 226 hypotheses for new_object3 (evidence > 0.0)
-INFO:root:Testing 168 out of 168 hypotheses for new_object4 (evidence > 0.0)
-INFO:root:current most likely hypothesis: new_object0 with evidence -1.0
-INFO:root:Setting terminal state of learning_module_0 to no_match
-INFO:root:Possible matches for LM 0: set()
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
 INFO:root:--- Global Matching Step 2 ---
-INFO:root:Going into exploratory mode after 2 steps
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -0.49999999638519554)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -0.9999999927738734)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.36
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -1.4999999926897467)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.86
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1179247   0.         -0.02318691]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -1.9999999920253955)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.07
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.12719858  0.         -0.0150219 ]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -2.4999999913328224)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.29
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11754518 0.         0.01287254]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -2.9999999879354)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.75
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11155893 0.         0.0308311 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -3.4999999843247767)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.22
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:all possible locations are in radius 0.1 of [0.11000677 0.         0.02655216]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -3.9999999806994717)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.71
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11080413  0.         -0.02083507]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -4.499999977069873)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.18
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.10918028  0.         -0.02802291]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -4.999999973440893)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.59
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1140891   0.         -0.02588907]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -5.499999969810697)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.02
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.11899792  0.         -0.02375524]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -5.999999966189014)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.45
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.12390675  0.         -0.0216214 ]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -6.499999966097545)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.68
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:all possible locations are in radius 0.1 of [0.16147861 0.         0.00905968]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -6.999999962590223)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.87
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.14598435  0.         -0.01255229]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -7.499999962568294)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.14
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.15098156  0.         -0.01062179]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -7.999999962465159)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.34
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.14905105  0.         -0.00562457]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -8.499999962248157)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.64
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.1722722   0.         -0.01771934]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -8.999999961902041)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 20 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.17181901  0.         -0.01259156]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -9.499999961310962)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.29
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 21 ---
+INFO:root:all possible locations are in radius 0.1 of [0.14325953 0.         0.00936706]
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -9.999999958706454)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.48
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 22 ---
+INFO:root:all possible locations are in radius 0.1 of [0.14132902 0.         0.01436427]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -10.499999956491797)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.75
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 23 ---
+INFO:root:all possible locations are in radius 0.1 of [0.13939851 0.         0.01936148]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -10.999999955220154)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.33
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 24 ---
+INFO:root:all possible locations are in radius 0.1 of [ 0.15644804  0.         -0.00086815]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -11.499999954083103)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.9
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 25 ---
+INFO:root:all possible locations are in radius 0.1 of [0.15732472 0.         0.00357519]
+INFO:root:added symmetry evidence
+INFO:root:Pose for learning_module_0 not narrowed down yet
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 850 out of 850 hypotheses for new_object0 (evidence > -11.999999952975386)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.14
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 26 ---
+INFO:root:all possible locations are in radius 0.1 of [0.1582014  0.         0.00801854]
+INFO:root:added symmetry evidence
+INFO:root:Symmetry detected for hypotheses [401 722]
+INFO:root:Setting terminal state of learning_module_0 to match
+INFO:root:learning_module_0: Detected new_object0 at location [0.134 0.    0.034], rotation [180.   0. 180.], and scale 1.0
+INFO:root:learning_module_0 recognized object new_object0
+INFO:root:
+
+MONTY DETECTED MATCH
+
+
+INFO:root:Going into exploratory mode after 26 steps
 INFO:root:Terminated due to maximum episode steps : 6000
 INFO:root:
 ---Updating memory of learning_module_0---
-INFO:root:new_object5 not in memory (['new_object0', 'new_object1', 'new_object2', 'new_object3', 'new_object4'])
-INFO:root:Adding a new graph to memory.
-INFO:root:init object model with id new_object5
-INFO:root:building graph from 1813 observations
-INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x71a5b25dfeb0>
-INFO:root:Added new graph with id new_object5 to memory.
-INFO:root:Model for new_object5:
-   Contains 113 points in graph.
+INFO:root:new_object0 already in memory (['new_object0'])
+INFO:root:Updating existing graph for new_object0
+INFO:root:adding 1704 observations
+INFO:root:Extended graph new_object0 with new points. New model:
+{'patch': Model for new_object0:
+   Contains 443 points in graph.
    Feature grid shape: torch.Size([50, 50, 50, 22])
    Stored features and their indexes:
            pose_vectors - 0:9,
@@ -269,9 +2417,9 @@ INFO:root:Model for new_object5:
            pose_vectors_flat - 11:17,
            rgba - 17:20,
            principal_curvatures_log - 20:22,
-
+}
 INFO:root:
 
 Going from 1 to 0 of 2
-INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/7/img_0
+INFO:root:Finished loading new image from /home/skj/tbp/data/mnist/samples/trainingSample/0/img_0
 INFO:root:saving model to mnist/log/mnist_unsuper/2

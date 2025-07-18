@@ -1,4 +1,4 @@
-INFO:root:Logger initialized at 2025-06-10 13:24:12.314370
+INFO:root:Logger initialized at 2025-06-12 13:50:45.708239
 WARNING:root:You are setting the monty logging level to DETAILED, but all yourhandlers are BASIC. Consider setting the level to BASIC, or adding aDETAILED handler
 INFO:root:New primary target: {'euler_rotation': array([280.6887601 , 214.86605686, 160.49979103]),
  'object': 'mug',
@@ -8,3 +8,600 @@ INFO:root:New primary target: {'euler_rotation': array([280.6887601 , 214.866056
  'scale': [1.0, 1.0, 1.0],
  'semantic_id': 1}
 INFO:root:Running a simulation to model object: mug
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:no objects in memory yet.
+INFO:root:current most likely hypothesis: new_object0 with evidence 0
+INFO:root:Setting terminal state of learning_module_0 to no_match
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Going into exploratory mode after 1 steps
+INFO:root:Terminated due to maximum episode steps : 5000
+WARNING:root:Output file surf_unsuper/log/surf_agent_2obj_unsupervised/train_stats.csv already exists. This file will be moved to surf_unsuper/log/surf_agent_2obj_unsupervised/train_stats_old.csv
+WARNING:root:Output file surf_unsuper/log/surf_agent_2obj_unsupervised/train_stats_old.csv also already exists. This file will be removed before renaming.
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:new_object0 not in memory ([])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id new_object0
+INFO:root:building graph from 1120 observations
+INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x73a51c5f2ac0>
+INFO:root:Added new graph with id new_object0 to memory.
+INFO:root:Model for new_object0:
+   Contains 574 points in graph.
+   Feature grid shape: torch.Size([50, 50, 50, 25])
+   Stored features and their indexes:
+           pose_vectors - 0:9,
+           pose_fully_defined - 9:10,
+           on_object - 10:11,
+           object_coverage - 11:12,
+           min_depth - 12:13,
+           mean_depth - 13:14,
+           hsv - 14:17,
+           principal_curvatures - 17:19,
+           principal_curvatures_log - 19:21,
+           gaussian_curvature - 21:22,
+           mean_curvature - 22:23,
+           gaussian_curvature_sc - 23:24,
+           mean_curvature_sc - 24:25,
+
+INFO:root:
+
+Going from 0 to 1 of 2
+INFO:root:New primary target: {'euler_rotation': array([338.84550152,  26.06985797, 192.32719415]),
+ 'object': 'bowl',
+ 'position': [0.0, 1.5, 0.0],
+ 'quat_rotation': array([ 0.2012303 ,  0.20160219, -0.94769775,  0.14398573]),
+ 'rotation': quaternion(0.143985730603626, 0.201230295828372, 0.201602192240173, -0.947697754301086),
+ 'scale': [1.0, 1.0, 1.0],
+ 'semantic_id': 2}
+INFO:root:Running a simulation to model object: bowl
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.55
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 1 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > 0.0)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.73
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 2 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > 0.7922719823513531)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.05
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 3 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > 0.5116124641767156)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.81
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 4 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > 0.07212904123585373)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.33
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 5 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -0.9278709587641463)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.87
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 6 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -1.9278709587641463)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.54
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 7 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -2.9278709587641463)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.44
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 8 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -3.9278709587641463)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.5
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 9 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -4.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 9.36
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 10 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -5.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 10.27
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 11 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -6.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 11.28
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 12 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -7.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 12.3
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 13 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -8.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 13.17
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 14 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -9.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 14.01
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 15 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -10.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 14.81
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 16 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -11.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 15.61
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 17 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -12.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 15.34
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 18 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -13.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 15.67
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 19 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -14.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 16.29
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 20 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -15.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 16.63
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 21 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -16.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 16.87
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 22 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -17.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 16.71
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 23 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -18.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 17.11
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 24 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -19.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 17.45
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 25 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -20.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 17.77
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 26 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -21.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 18.08
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 27 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -22.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 18.3
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 28 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -23.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 18.99
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 29 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -24.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 19.72
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 30 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -25.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 20.46
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 31 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -26.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 20.42
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 32 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -27.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 19.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 33 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -28.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 18.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 34 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -29.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 17.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 35 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -30.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 16.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 36 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -31.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 15.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 37 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -32.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 14.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 38 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -33.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 13.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 39 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -34.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 12.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 40 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -35.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 11.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 41 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -36.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 10.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 42 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -37.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 9.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 43 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -38.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 44 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -39.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 45 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -40.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 46 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -41.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 47 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -42.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 48 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -43.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 49 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -44.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 50 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -45.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 51 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -46.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.91
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 52 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Skipping step on learning module 0
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -47.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.3
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 53 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -48.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.64
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 54 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -49.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.76
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 55 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -50.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.18
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 56 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -51.927870958764146)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.04
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 57 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -52.863542501317355)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.07
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 58 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -53.863542501317355)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.27
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 59 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -54.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.06
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 60 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -55.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.38
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 61 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -56.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.06
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 62 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -57.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.26
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 63 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -58.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 8.12
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 64 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -59.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.63
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 65 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -60.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 7.14
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 66 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -61.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 6.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 67 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -62.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 5.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 68 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -63.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 4.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 69 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -64.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 3.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 70 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -65.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 2.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 71 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -66.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 1.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 72 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -67.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence 0.82
+INFO:root:Possible matches for LM 0: {'new_object0'}
+INFO:root:--- Global Matching Step 73 ---
+INFO:root:Sending input from ['patch'] to learning_module_0
+INFO:root:Testing 4592 out of 4592 hypotheses for new_object0 (evidence > -68.81195581288934)
+INFO:root:current most likely hypothesis: new_object0 with evidence -0.18
+INFO:root:Setting terminal state of learning_module_0 to no_match
+INFO:root:Possible matches for LM 0: set()
+INFO:root:--- Global Matching Step 74 ---
+INFO:root:Going into exploratory mode after 74 steps
+INFO:root:Terminated due to maximum episode steps : 5000
+INFO:root:
+---Updating memory of learning_module_0---
+INFO:root:new_object1 not in memory (['new_object0'])
+INFO:root:Adding a new graph to memory.
+INFO:root:init object model with id new_object1
+INFO:root:building graph from 1187 observations
+INFO:root:built graph <tbp.monty.frameworks.utils.object_model_utils.NumpyGraph object at 0x73a4fc37dc10>
+INFO:root:Added new graph with id new_object1 to memory.
+INFO:root:Model for new_object1:
+   Contains 611 points in graph.
+   Feature grid shape: torch.Size([50, 50, 50, 25])
+   Stored features and their indexes:
+           pose_vectors - 0:9,
+           pose_fully_defined - 9:10,
+           on_object - 10:11,
+           object_coverage - 11:12,
+           min_depth - 12:13,
+           mean_depth - 13:14,
+           hsv - 14:17,
+           principal_curvatures - 17:19,
+           principal_curvatures_log - 19:21,
+           gaussian_curvature - 21:22,
+           mean_curvature - 22:23,
+           gaussian_curvature_sc - 23:24,
+           mean_curvature_sc - 24:25,
+
+INFO:root:
+
+Going from 1 to 0 of 2
+INFO:root:New primary target: {'euler_rotation': array([259.81975898,  97.75693707, 144.88078948]),
+ 'object': 'mug',
+ 'position': [0.0, 1.5, 0.0],
+ 'quat_rotation': array([ 0.61298784,  0.33513904, -0.57661221,  0.42361079]),
+ 'rotation': quaternion(0.423610787133971, 0.612987837021528, 0.335139037299374, -0.576612207957355),
+ 'scale': [1.0, 1.0, 1.0],
+ 'semantic_id': 1}
+INFO:root:saving model to surf_unsuper/log/surf_agent_2obj_unsupervised/0

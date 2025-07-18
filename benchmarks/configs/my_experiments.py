@@ -252,7 +252,7 @@ surf_agent_2obj_unsupervised = dict(
         # Not running eval here. The only difference between training and evaluation
         # is that during evaluation, no models are updated.
         do_eval=False,
-        n_train_epochs=2,
+        n_train_epochs=1,
         max_train_steps=2000,
         max_total_steps=5000,
     ),
@@ -302,6 +302,7 @@ mnist_sensor_module_config = dict(
             	"pose_fully_defined",
             	"on_object",
             	"principal_curvatures_log",
+                "principal_curvatures",
         	],
         	save_raw_obs=False,
         	# Need to set this lower since curvature is generally lower
@@ -378,11 +379,11 @@ mnist_inference = dict(
         model_name_or_path = "mnist/log/mnist_training/pretrained",
         do_train=False,
         do_eval=True,
-        n_train_epochs=3,
+        n_train_epochs=1,
         n_eval_epochs=1,
         #max_train_steps=100,
         #max_eval_steps=100,
-        max_total_steps=6000,
+        max_total_steps=21 * 21,
     ),
     #logging_config=LoggingConfig(),
     logging_config=CSVLoggingConfig(
@@ -396,16 +397,18 @@ mnist_inference = dict(
         #motor_system_config = MotorSystemConfigInformedNoTransStepS3(),
         motor_system_config=MotorSystemConfigNaiveScanSpiral(),
         monty_class=MontyForEvidenceGraphMatching,
+        monty_args=MontyArgs(min_eval_steps=80, num_exploratory_steps=0),
         learning_module_configs=dict(
-            learning_module_0=dict(                 
+            learning_module_0=dict(
                 learning_module_class=EvidenceGraphLM,
                 learning_module_args=dict(              
+                    enable_plotting=True,
                     #x_percent_threshold=20, 
                     max_match_distance=1,
                     tolerances={
                         "patch": {
                             "principal_curvatures_log": np.ones(2),
-                            "pose_vectors": np.ones(3) * 45,
+                            "pose_vectors": np.ones(3) * 5,
                         }
                     },
                     # Point normal always points up, so they are not useful
@@ -415,7 +418,14 @@ mnist_inference = dict(
                         }
                     },
                     # We assume the letter is presented upright
-                    #initial_possible_poses=[[0, 0, 0]],
+                    initial_possible_poses=[[0, 0, 0],
+                                            [0,10,0],
+                                            [0,-10,0],
+                                            [0,20,0],
+                                            [0,-20,0],
+                                            [0,30,0],
+                                            [0,-30,0],
+                                            ],
                 ),
             )
         ),
@@ -425,23 +435,22 @@ mnist_inference = dict(
     dataset_args=MnistDatasetArgs(),
     train_dataloader_class=ED.MnistDataLoader,
 	#train_dataloader_args=MnistDataloaderArgs(),
-    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,2), num_versions=3),
+    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=1),
     eval_dataloader_class=ED.MnistDataLoader,
     #eval_dataloader_args=MnistEvalDataloaderArgs(),
-    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(9,10), num_versions=10)
+    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 4, number_ids = np.arange(5,6), num_versions=1)
 )
 
 mnist_unsuper = dict(
     experiment_class=MontyObjectRecognitionExperiment,
-    experiment_args=ExperimentArgs(        
-        
+    experiment_args=ExperimentArgs(
         do_train=True,
         do_eval=False,
-        n_train_epochs=3,
-        n_eval_epochs=1,
+        n_train_epochs=1,
+        n_eval_epochs=0,
         #max_train_steps=100,
         #max_eval_steps=100,
-        max_total_steps=6000,
+        max_total_steps=21*21,
     ),
     #logging_config=LoggingConfig(),
     logging_config=CSVLoggingConfig(
@@ -455,16 +464,18 @@ mnist_unsuper = dict(
         #motor_system_config = MotorSystemConfigInformedNoTransStepS3(),
         motor_system_config=MotorSystemConfigNaiveScanSpiral(),
         monty_class=MontyForEvidenceGraphMatching,
+        monty_args=MontyArgs(min_eval_steps=80, min_train_steps=80, num_exploratory_steps=21*21),
+
         learning_module_configs=dict(
             learning_module_0=dict(                 
                 learning_module_class=EvidenceGraphLM,
                 learning_module_args=dict(              
                     #x_percent_threshold=20, 
-                    max_match_distance=0.0000001,
+                    max_match_distance=0.1,
                     tolerances={
                         "patch": {
                             "principal_curvatures_log": np.ones(2),
-                            "pose_vectors": np.ones(3) * 45,
+                            "pose_vectors": np.ones(3) * 5,
                         }
                     },
                     # Point normal always points up, so they are not useful
@@ -474,7 +485,14 @@ mnist_unsuper = dict(
                         }
                     },
                     # We assume the letter is presented upright
-                    #initial_possible_poses=[[0, 0, 0]],
+                    initial_possible_poses=[[0, 0, 0],
+                        [0,10,0],
+                        [0,-10,0],
+                        [0,20,0],
+                        [0,-20,0],
+                        [0,30,0],
+                        [0,-30,0],
+                        ],
                 ),
             )
         ),
@@ -484,7 +502,7 @@ mnist_unsuper = dict(
     dataset_args=MnistDatasetArgs(),
     train_dataloader_class=ED.MnistDataLoader,
 	#train_dataloader_args=MnistDataloaderArgs(),
-    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(2,4), num_versions=1),
+    train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,1), num_versions=2),
     eval_dataloader_class=ED.MnistDataLoader,
     #eval_dataloader_args=MnistEvalDataloaderArgs(),
     eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(2,4), num_versions=3)

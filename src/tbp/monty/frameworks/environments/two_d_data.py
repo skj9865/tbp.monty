@@ -26,7 +26,7 @@ from tbp.monty.frameworks.environments.embodied_environment import (
 )
 
 __all__ = [
-    "OmniglotEnvironment",
+    "OmniglotEnvironment",  
     "SaccadeOnImageEnvironment",
     "SaccadeOnImageFromStreamEnvironment",
 ]
@@ -844,11 +844,16 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         self.rotation = qt.from_rotation_vector([np.pi / 2, 0.0, 0.0])
         self.state = 0
         self.data_path = data_path
+        # if self.data_path is None:
+        #     self.data_path = os.path.join(os.environ["MONTY_DATA"], "mnist/samples/trainingSample")
+        # self.number_names = [
+        #     a for a in os.listdir(self.data_path) if a[0] != "."
+        # ]  
         if self.data_path is None:
-            self.data_path = os.path.join(os.environ["MONTY_DATA"], "mnist/samples/trainingSample")
-        self.number_names = [
-            a for a in os.listdir(self.data_path) if a[0] != "."
-        ]        
+            self.data_path = os.path.join(os.environ["MONTY_DATA"], "mnist_png/train/")
+        self.number_names = sorted(
+            [a for a in os.listdir(self.data_path) if a[0] != "."], key=int
+        )        
 
         self.current_number = self.number_names[0]        
         self.number_version = 1
@@ -934,7 +939,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         zz = np.zeros_like(xx, dtype=np.float32)        
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
-        sem_id = (patch > 20).astype(np.float32)
+        #sem_id = (patch > 20).astype(np.float32)
+        sem_id = (patch > 0).astype(np.float32)
         semantic_3d = np.stack([xx, zz, yy, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
@@ -946,7 +952,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         sensor_frame_data = semantic_3d.copy()
 
         # ── 4) 깊이 맵 : 0.5(전경) / 1.0(배경) ───────────────────────
-        depth = np.where(patch > 100, 0.2, 1.0).astype(np.float32)
+        #depth = np.where(patch > 100, 0.2, 1.0).astype(np.float32)
+        depth = np.where(patch > 0.5, 0.2, 1.0).astype(np.float32)
         #print(depth)
         # ── 5) world_camera : 단순 평면이므로 단위 행렬 ───────────────
         world_camera = np.eye(4, dtype=np.float32)
@@ -1037,7 +1044,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         zz = np.zeros_like(xx, dtype=np.float32)        
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
-        sem_id = (patch > 100).astype(np.float32)
+        #sem_id = (patch > 100).astype(np.float32)
+        sem_id = (patch > 0).astype(np.float32)
         semantic_3d = np.stack([xx, zz, yy, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
@@ -1049,7 +1057,8 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         sensor_frame_data = semantic_3d.copy()
 
         # ── 4) 깊이 맵 : 0.5(전경) / 1.0(배경) ───────────────────────
-        depth = np.where(patch > 100, 0.2, 1.0).astype(np.float32)
+        #depth = np.where(patch > 100, 0.2, 1.0).astype(np.float32)
+        depth = np.where(patch > 0.5, 0.2, 1.0).astype(np.float32)
         #print(depth)
         # ── 5) world_camera : 단순 평면이므로 단위 행렬 ───────────────
         world_camera = np.eye(4, dtype=np.float32)
@@ -1078,11 +1087,16 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
             self.data_path,            
             self.current_number,
         )
-        char_img_names = os.listdir(img_char_dir)[0].split("_")[0]
-        char_dir = "/" + char_img_names + "_" + str(self.number_version).zfill(1)         
-        current_image = load_img_skj(img_char_dir + char_dir + ".jpg")        
-        logging.info(f"Finished loading new image from {img_char_dir + char_dir}")
-        
+        # char_img_names = os.listdir(img_char_dir)[0].split("_")[0]
+        # char_dir = "/" + char_img_names + "_" + str(self.number_version).zfill(1)         
+        # current_image = load_img_skj(img_char_dir + char_dir + ".jpg")        
+        # logging.info(f"Finished loading new image from {img_char_dir + char_dir}")
+        available_version_ids = sorted(
+            os.listdir(img_char_dir), key=lambda name: int(name.split(".")[0])
+        )
+        current_image=load_img_skj(
+            img_char_dir + "/" + available_version_ids[self.number_version]
+        )
         img_shape = current_image.shape
         start_location = [img_shape[0] // 2, img_shape[1] // 2]
         
