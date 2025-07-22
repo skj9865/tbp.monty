@@ -83,7 +83,7 @@ bx.quiver(points[:, 0], points[:, 1], points[:, 2],
 
 bx.set_box_aspect([1, 1, 1])  # 평면 객체라면 z 축 축소
 
-a
+
 # fig3 = plt.figure(figsize=(6,6))
 # cx = fig3.add_subplot(111, projection='3d')
 # cx.scatter(points[:,0], points[:,1], points[:,2], color='gray')

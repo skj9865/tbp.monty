@@ -312,11 +312,21 @@ class DetailedLoggingSM(SensorModuleBase):
         return observed_state
 
     ####################### by skj for 2D processing
+    def non_singular_mat(mat):
+        return np.linalg.cond(mat) < 1e10 # A common heuristic for non-singularity
+
+    def get_right_hand_angle(vec1, vec2, normal_dir):
+        if len(vec1) == 2 and len(vec2) == 2:
+            # 2D cross product (scalar)
+            return vec1[0] * vec2[1] - vec1[1] * vec2[0]
+        elif len(vec1) == 3 and len(vec2) == 3 and len(normal_dir) == 3:
+            return np.dot(np.cross(vec1, vec2), normal_dir)
+        return 0 # Fallback
+
     @staticmethod
     def get_gradient_vector(img_patch: np.ndarray, center:int, eps=1e-6):
         # 1) 확실히 ndarray 로 변환 - 복사하지 않으면 view 반환
         img = np.ascontiguousarray(img_patch, dtype=np.float32)
-
         gx = cv2.Sobel(img_patch, cv2.CV_64F, 1, 0, ksize=3)
         gy = cv2.Sobel(img_patch, cv2.CV_64F, 0, 1, ksize=3)
         g   = np.array([gx.flat[center], gy.flat[center]])
@@ -325,42 +335,52 @@ class DetailedLoggingSM(SensorModuleBase):
         return (g / (mag + eps), valid)
     
     @staticmethod
-    def get_hessian_eigens(img_patch: np.ndarray, center:int, σ=1.0):
-        f = cv2.GaussianBlur(img_patch, (0,0), σ)       # 소음 완7
+    def get_hessian_eigens(img_patch: np.ndarray, center:int, σ=1.0):            
+        f = cv2.GaussianBlur(img_patch, (0, 0), σ)
         fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3)
         fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3)
         fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3)
-        H   = np.array([[fxx.flat[center], fxy.flat[center]],
-                        [fxy.flat[center], fyy.flat[center]]])
-        λ, V = np.linalg.eigh(H)              # λ0 ≥ λ1 정렬
-        idx  = np.argsort(-np.abs(λ))
-        return λ[idx][0], λ[idx][1], V[:,idx][:,0], V[:,idx][:,1], True
-    
-        # f = cv2.GaussianBlur(img_patch, (0,0), σ)
-        # fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3).flat[center]
-        # fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3).flat[center]
-        # fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3).flat[center]
 
-        # # Eigenvalues
-        # trace = fxx + fyy
-        # delta = np.sqrt((fxx - fyy)**2 + 4*fxy**2)
-        # λ1 = 0.5 * (trace + delta)
-        # λ2 = 0.5 * (trace - delta)
+        H = np.array([[fxx.flat[center], fxy.flat[center]],
+                      [fxy.flat[center], fyy.flat[center]]])
+        
+        valid_pc = True
+        try:
+            # Check for singularity before computing eigenvalues
+            if not non_singular_mat(H):
+                logging.debug("Warning: Singular Hessian matrix encountered in get_hessian_eigens!")
+                return 0, 0, np.zeros(2), np.zeros(2), False # Return invalid data
 
-        # # Eigenvectors
-        # if fxy != 0:
-        #     v1 = np.array([λ1 - fyy, fxy])
-        #     v2 = np.array([λ2 - fyy, fxy])
-        # elif fxx >= fyy:
-        #     v1 = np.array([1, 0])
-        #     v2 = np.array([0, 1])
-        # else:
-        #     v1 = np.array([0, 1])
-        #     v2 = np.array([1, 0])
-        # v1 /= np.linalg.norm(v1)
-        # v2 /= np.linalg.norm(v2)
+            λ, V = np.linalg.eigh(H)
+            
+            # Sort eigenvalues by absolute value in descending order
+            idx = np.argsort(-np.abs(λ))
+            k1, k2 = λ[idx][0], λ[idx][1]
+            v1, v2 = V[:, idx][:, 0], V[:, idx][:, 1]
 
-        # return λ1, λ2, v1, v2, True
+            # Ensure consistent orientation for eigenvectors (optional but good practice)
+            # For 2D, this might be ensuring a "right-hand" rule or simply consistent axis alignment.
+            # Example: make v1 point generally towards positive x, or v2 generally towards positive y relative to v1.
+            # Here, we keep the original logic for simplicity, assuming sorting based on abs value is sufficient
+            # for primary and secondary directions. Further consistency checks might be needed based on application.
+
+        except np.linalg.LinAlgError:
+            logging.debug("Warning: Non-diagonalizable Hessian matrix for PC estimation!")
+            k1, k2 = 0, 0
+            v1, v2 = np.zeros(2), np.zeros(2)
+            valid_pc = False
+        
+        return k1, k2, v1, v2, valid_pc
+
+        # f = cv2.GaussianBlur(img_patch, (0,0), σ)       # 소음 완7
+        # fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3)
+        # fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3)
+        # fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3)
+        # H   = np.array([[fxx.flat[center], fxy.flat[center]],
+        #                 [fxy.flat[center], fyy.flat[center]]])
+        # λ, V = np.linalg.eigh(H)              # λ0 ≥ λ1 정렬
+        # idx  = np.argsort(-np.abs(λ))
+        # return λ[idx][0], λ[idx][1], V[:,idx][:,0], V[:,idx][:,1], True
     ####################### by skj for 2D processing
 
     def skj_extract_and_add_features(
@@ -373,14 +393,86 @@ class DetailedLoggingSM(SensorModuleBase):
             center_rowcol: int,            # 패치 중앙 row == col
             sem_mask: np.ndarray,          # (H, W)  ─ on-object 마스크
         ):
-        """
-        2-D(평면)용 특징 추출:
-        · 그래디언트 → '법선'   (pose_vectors[0])
-        · Hessian 고유벡터      (pose_vectors[1:3])
-        · 비-형상 feature(rgba, hsv, depth 통계)도 그대로 지원
-        Returns:
-            features, morphological_features, invalid_signals
-        """
+
+               
+        grad_vec, valid_grad = self.get_gradient_vector(gray_patch, center_flat_idx)
+        k1, k2, v1, v2, valid_pc_hessian = self.get_hessian_eigens(gray_patch, center_flat_idx)
+
+        normal = np.array([0.0, 1.0, 0.0])
+
+        v1_xyz = np.array([v1[0], 0.0, v1[1]])
+        v2_xyz = np.array([v2[0], 0.0, v2[1]])
+        
+        # Normalize vectors after constructing 3D versions
+        v1_xyz = v1_xyz / (np.linalg.norm(v1_xyz) + 1e-6)
+        v2_xyz = v2_xyz / (np.linalg.norm(v2_xyz) + 1e-6)
+
+        # Apply consistent orientation if needed, analogous to 3D get_principal_curvatures
+        # The normal for 2D planar case (e.g. z-axis out of image plane) would be [0,0,1] or [0,0,-1]
+        # But here, user has `normal = np.array([0.0,1.0,0.0])` so we use that.
+        # Assuming the 2D plane is embedded in x-z plane of the 3D space, and the 'normal'
+        # is actually the y-axis, then `get_right_hand_angle` with `normal` as up-vector makes sense.
+        if get_right_hand_angle(v1_xyz, v2_xyz, normal) < 0:
+            v2_xyz = -v2_xyz # Flip v2_xyz if it's not "right-handed" w.r.t v1_xyz and the normal.
+
+        morphological_features = {
+            "pose_vectors": np.vstack([
+                normal,
+                v1_xyz,
+                v2_xyz,
+            ]),
+            "pose_fully_defined": bool(abs(k1 - k2) > self.pc1_is_pc2_threshold) and valid_pc_hessian
+        }
+
+        features["pose_vectors_flat"] = np.hstack([v1_xyz, v2_xyz]) # for debugging
+
+        # Non-morphological features (unchanged)
+        c = center_rowcol
+        if "rgba" in self.features:
+            features["rgba"] = rgba_patch[c, c]
+
+        if "hsv" in self.features:
+            rgb = rgba_patch[c, c] / 255.0
+            hsv = skimage.color.rgb2hsv(rgb[np.newaxis, np.newaxis, :])[0, 0]
+            features["hsv"] = hsv
+
+        if "min_depth" in self.features:
+            valid = depth_patch[sem_mask] < 1.0
+            features["min_depth"] = float(depth_patch[sem_mask][valid].min()) \
+                if valid.any() else np.nan
+
+        if "mean_depth" in self.features:
+            valid = depth_patch[sem_mask] < 1.0
+            features["mean_depth"] = float(depth_patch[sem_mask][valid].mean()) \
+                if valid.any() else np.nan
+
+        if any("curvature" in f for f in self.features) and valid_pc_hessian:
+            if "principal_curvatures" in self.features:
+                features["principal_curvatures"] = np.array([k1, k2])
+            # Assuming log_sign is available
+            # if "principal_curvatures_log" in self.features:
+            #     features["principal_curvatures_log"] = log_sign(np.array([k1, k2]))
+            if "gaussian_curvature" in self.features:
+                features["gaussian_curvature"] = k1 * k2
+            if "mean_curvature" in self.features:
+                features["mean_curvature"] = (k1 + k2) / 2
+
+        invalid_signals = not valid_pc_hessian # Lawless means Hessian was singular
+
+        return features, morphological_features, invalid_signals
+
+    def skj_extract_and_add_features2(
+            self,
+            features: dict,
+            gray_patch: np.ndarray,        # (H, W)  ─ SIFT 등 형상 계산용
+            rgba_patch: np.ndarray,        # (H, W, 3)
+            depth_patch: np.ndarray,       # (H, W)  ─ 가짜 깊이 0.5/1.0
+            center_flat_idx: int,          # row * W + col
+            center_rowcol: int,            # 패치 중앙 row == col
+            sem_mask: np.ndarray,          # (H, W)  ─ on-object 마스크
+        ):
+
+
         # ────────────────────────────────────────────────────────────
         # 1.  형상-특징 (Morphological)
         # ────────────────────────────────────────────────────────────
