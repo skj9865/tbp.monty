@@ -830,7 +830,7 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
     Images should be stored in .png format for rgb and .data format for depth.
     """
 
-    def __init__(self, patch_size=10, data_path=None):
+    def __init__(self, patch_size=7, data_path=None):
         """Initialize environment.
 
         Args:
@@ -940,7 +940,7 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
         #sem_id = (patch > 20).astype(np.float32)
-        sem_id = (patch > 0).astype(np.float32)
+        sem_id = (patch > 0.2).astype(np.float32)
         semantic_3d = np.stack([xx, zz, yy, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   
@@ -1045,7 +1045,7 @@ class TwoDimensionSaccadeOnImageEnvironment(EmbodiedEnvironment): # by skj for 2
         #print(yy)
         # 글자(픽셀 값 > 0)를 semantic_id=1 로 표시
         #sem_id = (patch > 100).astype(np.float32)
-        sem_id = (patch > 0).astype(np.float32)
+        sem_id = (patch > 0.2).astype(np.float32)        
         semantic_3d = np.stack([xx, zz, yy, sem_id], axis=-1) \
                 .astype(np.float32) \
                 .reshape(-1, 4)   

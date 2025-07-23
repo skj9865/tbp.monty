@@ -17,6 +17,7 @@ from skimage.color import rgb2hsv
 import skimage
 
 import cv2 # by skj for 2D processing
+import matplotlib.pyplot as plt # by skj
 
 from tbp.monty.frameworks.models.monty_base import SensorModuleBase
 from tbp.monty.frameworks.models.states import State
@@ -30,6 +31,17 @@ from tbp.monty.frameworks.utils.sensor_processing import (
 )
 from tbp.monty.frameworks.utils.spatial_arithmetics import get_angle
 
+
+def non_singular_mat(mat): # by skj
+    return np.linalg.cond(mat) < 1e10 # A common heuristic for non-singularity
+
+def get_right_hand_angle(vec1, vec2, normal_dir): # by skj
+    if len(vec1) == 2 and len(vec2) == 2:
+        # 2D cross product (scalar)
+        return vec1[0] * vec2[1] - vec1[1] * vec2[0]
+    elif len(vec1) == 3 and len(vec2) == 3 and len(normal_dir) == 3:
+        return np.dot(np.cross(vec1, vec2), normal_dir)
+    return 0 # Fallback
 
 class DetailedLoggingSM(SensorModuleBase):
     """Sensor module that keeps track of raw observations for logging."""
@@ -312,16 +324,6 @@ class DetailedLoggingSM(SensorModuleBase):
         return observed_state
 
     ####################### by skj for 2D processing
-    def non_singular_mat(mat):
-        return np.linalg.cond(mat) < 1e10 # A common heuristic for non-singularity
-
-    def get_right_hand_angle(vec1, vec2, normal_dir):
-        if len(vec1) == 2 and len(vec2) == 2:
-            # 2D cross product (scalar)
-            return vec1[0] * vec2[1] - vec1[1] * vec2[0]
-        elif len(vec1) == 3 and len(vec2) == 3 and len(normal_dir) == 3:
-            return np.dot(np.cross(vec1, vec2), normal_dir)
-        return 0 # Fallback
 
     @staticmethod
     def get_gradient_vector(img_patch: np.ndarray, center:int, eps=1e-6):
@@ -335,8 +337,9 @@ class DetailedLoggingSM(SensorModuleBase):
         return (g / (mag + eps), valid)
     
     @staticmethod
-    def get_hessian_eigens(img_patch: np.ndarray, center:int, σ=1.0):            
+    def get_hessian_eigens(img_patch: np.ndarray, center:int, σ=1.5):            
         f = cv2.GaussianBlur(img_patch, (0, 0), σ)
+        
         fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3)
         fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3)
         fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3)
@@ -372,7 +375,7 @@ class DetailedLoggingSM(SensorModuleBase):
         
         return k1, k2, v1, v2, valid_pc
 
-        # f = cv2.GaussianBlur(img_patch, (0,0), σ)       # 소음 완7
+        # f = cv2.GaussianBlur(img_patch, (0,0), σ)       # 소음 완화
         # fxx = cv2.Sobel(f, cv2.CV_64F, 2, 0, ksize=3)
         # fyy = cv2.Sobel(f, cv2.CV_64F, 0, 2, ksize=3)
         # fxy = cv2.Sobel(f, cv2.CV_64F, 1, 1, ksize=3)
@@ -426,6 +429,112 @@ class DetailedLoggingSM(SensorModuleBase):
 
         features["pose_vectors_flat"] = np.hstack([v1_xyz, v2_xyz]) # for debugging
 
+        # ────────────────────────────────────────────────────────────
+        # 시각화 코드 시작
+        # ────────────────────────────────────────────────────────────
+        # patch_height, patch_width = gray_patch.shape
+        # # 중앙 픽셀의 (x, y) 좌표 for quiver plot
+        # # imshow의 origin='upper'에 맞춰서 y축을 뒤집어 줘야 할 수도 있습니다.
+        # # imshow에서의 (row, col)은 보통 (y, x)에 해당합니다.
+        # center_x_for_plot = center_rowcol # col
+        # center_y_for_plot = center_rowcol # row
+
+        # # 1. 원본 이미지 패치 시각화
+        # plt.figure(figsize=(12, 6))
+        # plt.subplot(2, 4, 1)
+        # plt.imshow(gray_patch, cmap='gray')
+        # plt.title('1. Original Patch')
+        # plt.colorbar()
+
+        # # 2. 스무딩된 이미지 패치 시각화 (σ=2.0이 적용된 결과)
+        # f_smoothed = cv2.GaussianBlur(gray_patch, (0,0), 2.0) # 현재 설정된 σ 값
+        # plt.subplot(2, 4, 2)
+        # plt.imshow(f_smoothed, cmap='gray')
+        # plt.title(f'2. Smoothed Patch (σ=2.0)')
+        # plt.colorbar()
+
+        # # 3. 헤시안 미분 맵 시각화 (전체 패치에 대해 계산)
+        # # cv2.Sobel의 결과는 2차 미분 맵 전체입니다.
+        # fxx_map = cv2.Sobel(f_smoothed, cv2.CV_64F, 2, 0, ksize=3)
+        # fyy_map = cv2.Sobel(f_smoothed, cv2.CV_64F, 0, 2, ksize=3)
+        # fxy_map = cv2.Sobel(f_smoothed, cv2.CV_64F, 1, 1, ksize=3)
+
+        # plt.subplot(2, 4, 3)
+        # plt.imshow(fxx_map, cmap='RdBu_r') # 2차 미분은 양/음수 값 가짐
+        # plt.title('3a. fxx Map')
+        # plt.colorbar()
+
+        # plt.subplot(2, 4, 4)
+        # plt.imshow(fyy_map, cmap='RdBu_r')
+        # plt.title('3b. fyy Map')
+        # plt.colorbar()
+
+        # plt.subplot(2, 4, 5)
+        # plt.imshow(fxy_map, cmap='RdBu_r')
+        # plt.title('3c. fxy Map')
+        # plt.colorbar()
+
+        # # 4. 주 곡률 값 출력 (중심 픽셀)
+        # print(f"\n--- Debugging for Patch at Center ({center_rowcol},{center_rowcol}) ---")
+        # print(f"Original gray_patch value at center: {gray_patch[center_rowcol, center_rowcol]}")
+        # print(f"Smoothed patch value at center: {f_smoothed[center_rowcol, center_rowcol]}")
+        # print(f"Hessian components at center: fxx={fxx_map[center_rowcol, center_rowcol]}, fyy={fyy_map[center_rowcol, center_rowcol]}, fxy={fxy_map[center_rowcol, center_rowcol]}")
+        # print(f"Principal Curvatures (k1, k2): {k1}, {k2}")
+        # print(f"Principal Direction 1 (v1_2D): {v1}")
+        # print(f"Principal Direction 2 (v2_2D): {v2}")
+        # print(f"Transformed Principal Direction 1 (v1_xyz): {v1_xyz}")
+        # print(f"Transformed Principal Direction 2 (v2_xyz): {v2_xyz}")
+        # print(f"Gradient Vector (grad_vec): {grad_vec}")
+        # print(f"Hessian valid_pc: {valid_pc_hessian}")
+        # print(f"Pose fully defined: {morphological_features['pose_fully_defined']}")
+
+
+        # # 5. 주 곡률 벡터 시각화 (중심 픽셀에 화살표 오버레이)
+        # # v1_xyz와 v2_xyz는 3D (x,y,z) 형태이지만, y=0으로 고정되므로 (x,z) 평면으로 투영하여 2D 이미지에 오버레이합니다.
+        # # quiver의 U, V는 각각 x, y(수직) 성분입니다.
+        # # v1_xyz[0] -> x, v1_xyz[2] -> z (original y)
+        
+        # # 주 방향 벡터 1 시각화
+        # plt.subplot(2, 4, 6)
+        # plt.imshow(gray_patch, cmap='gray')
+        # plt.title('5a. Principal Dir 1 (v1)')
+        # plt.quiver(center_x_for_plot, center_y_for_plot, v1_xyz[0], v1_xyz[2], 
+        #            color='r', scale=0.5, scale_units='xy', angles='xy', width=0.01)
+        # plt.plot(center_x_for_plot, center_y_for_plot, 'bo', markersize=3) # 중심점
+
+        # # 주 방향 벡터 2 시각화
+        # plt.subplot(2, 4, 7)
+        # plt.imshow(gray_patch, cmap='gray')
+        # plt.title('5b. Principal Dir 2 (v2)')
+        # plt.quiver(center_x_for_plot, center_y_for_plot, v2_xyz[0], v2_xyz[2], 
+        #            color='g', scale=0.5, scale_units='xy', angles='xy', width=0.01)
+        # plt.plot(center_x_for_plot, center_y_for_plot, 'bo', markersize=3) # 중심점
+
+        # # 모든 벡터 시각화 (Optional)
+        # plt.subplot(2, 4, 8)
+        # plt.imshow(gray_patch, cmap='gray')
+        # plt.title('5c. Both Principal Dirs')
+        # plt.quiver(center_x_for_plot, center_y_for_plot, v1_xyz[0], v1_xyz[2], 
+        #            color='r', scale=0.5, scale_units='xy', angles='xy', width=0.01, label='v1')
+        # plt.quiver(center_x_for_plot, center_y_for_plot, v2_xyz[0], v2_xyz[2], 
+        #            color='g', scale=0.5, scale_units='xy', angles='xy', width=0.01, label='v2')
+        # # 그래디언트 벡터도 함께 시각화 (선택 사항)
+        # # if valid_grad:
+        # #     # grad_vec은 2D (x,y) 이므로, z를 0으로 확장하여 그립니다.
+        # #     plt.quiver(center_x_for_plot, center_y_for_plot, grad_vec[0], grad_vec[1],
+        # #                color='b', scale=0.5, scale_units='xy', angles='xy', width=0.01, label='Gradient')
+        # plt.plot(center_x_for_plot, center_y_for_plot, 'bo', markersize=3) # 중심점
+        # plt.legend()
+
+
+        # plt.tight_layout()
+        # plt.show(block=True) # 이 줄이 실행될 때까지 코드 실행이 일시 중지됩니다.
+
+        # ────────────────────────────────────────────────────────────
+        # 시각화 코드 끝
+        # ────────────────────────────────────────────────────────────
+
+
         # Non-morphological features (unchanged)
         c = center_rowcol
         if "rgba" in self.features:
@@ -450,8 +559,8 @@ class DetailedLoggingSM(SensorModuleBase):
             if "principal_curvatures" in self.features:
                 features["principal_curvatures"] = np.array([k1, k2])
             # Assuming log_sign is available
-            # if "principal_curvatures_log" in self.features:
-            #     features["principal_curvatures_log"] = log_sign(np.array([k1, k2]))
+            if "principal_curvatures_log" in self.features:
+                features["principal_curvatures_log"] = log_sign(np.array([k1, k2]))
             if "gaussian_curvature" in self.features:
                 features["gaussian_curvature"] = k1 * k2
             if "mean_curvature" in self.features:

@@ -383,7 +383,7 @@ mnist_inference = dict(
         n_eval_epochs=1,
         #max_train_steps=100,
         #max_eval_steps=100,
-        max_total_steps=21 * 21,
+        max_total_steps=21 * 21, # patch size 10 x 10
     ),
     #logging_config=LoggingConfig(),
     logging_config=CSVLoggingConfig(
@@ -402,7 +402,7 @@ mnist_inference = dict(
             learning_module_0=dict(
                 learning_module_class=EvidenceGraphLM,
                 learning_module_args=dict(              
-                    enable_plotting=True,
+                    enable_plotting=False,
                     #x_percent_threshold=20, 
                     max_match_distance=1,
                     tolerances={
@@ -438,7 +438,7 @@ mnist_inference = dict(
     train_dataloader_args = get_mnist_train_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=1),
     eval_dataloader_class=ED.MnistDataLoader,
     #eval_dataloader_args=MnistEvalDataloaderArgs(),
-    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 4, number_ids = np.arange(5,6), num_versions=1)
+    eval_dataloader_args = get_mnist_eval_dataloader(start_at_version = 0, number_ids = np.arange(0,10), num_versions=10)
 )
 
 mnist_unsuper = dict(
